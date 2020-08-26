@@ -13,9 +13,9 @@ class CreateUsuariosTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuario', function (Blueprint $table) {
+        Schema::create('usuarios', function (Blueprint $table) {
             $table->bigIncrements('id_usuario');
-            $table->unsignedBigInteger("id_tipo_usuario");
+            $table->unsignedBigInteger("id_tipo_usuario")->default('1');;
             $table->unsignedBigInteger("restaurante_asociado")->nullable();
             $table->string("nombre",255);
             $table->string("apellido",255);
@@ -24,9 +24,10 @@ class CreateUsuariosTable extends Migration
             $table->unsignedBigInteger("estado");
             $table->string("telefono",9)->unique();
             $table->string("direccion",255);
+            $table->string("api_token",60)->unique()->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('id_tipo_usuario')->references('id_tipo_usuario')->on('tipo_usuario');
+            $table->foreign('id_tipo_usuario')->references('id_tipo_usuario')->on('tipo_usuarios');
         });
     }
 
@@ -37,6 +38,6 @@ class CreateUsuariosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('usuarios');
     }
 }
