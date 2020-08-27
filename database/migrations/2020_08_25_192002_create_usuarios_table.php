@@ -24,7 +24,6 @@ class CreateUsuariosTable extends Migration
             $table->unsignedBigInteger("estado");
             $table->string("telefono",9)->unique();
             $table->string("direccion",255);
-            $table->string("api_token",60)->unique()->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->foreign('id_tipo_usuario')->references('id_tipo_usuario')->on('tipo_usuarios');

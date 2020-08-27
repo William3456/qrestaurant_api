@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Route::apiResource('usuario', 'UsuarioController');
-/*Route::middleware('auth:api')->get('/usuario', function (Request $request) {
+Route::middleware('auth:api')->get('/usuario', function (Request $request) {
     return $request->user();
-});*/
+});
 
 Route::post('usuario', 'UsuarioController@store');
 Route::get('usuario', 'UsuarioController@index');

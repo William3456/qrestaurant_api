@@ -20,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2013_08_25_154614_create_tipo_usuario_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_usuarios_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_162538_create_restaurante_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_162352_create_menu_restaurante_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_192002_create_usuarios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_25_192002_create_usuarios_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TipoUsuarioSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TipoUsuarioSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192002_create_usuarios_table.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192137_create_menu_restaurantes_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Usuario.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -214,7 +214,9 @@
       <updated>1598369442154</updated>
       <workItem from="1598369444296" duration="108000" />
       <workItem from="1598369587596" duration="13235000" />
-      <workItem from="1598477508189" duration="5485000" />
+      <workItem from="1598477508189" duration="6839000" />
+      <workItem from="1598495395890" duration="5646000" />
+      <workItem from="1598539969326" duration="4966000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
@@ -250,6 +252,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="90" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1598383707838" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598487188206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598487188206" />
     <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1598374908016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

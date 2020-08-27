@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Usuario;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Symfony\Component\Console\Input\Input;
 
 class UsuarioController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('client_credentials')->except('store', 'login', 'logout');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,15 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        return Usuario::all();
+        $usuarios = Usuario::all();
+        if($usuarios == null){
+            return response()->json([
+                "error" => "No se encontraron registros",
+                "codigo" => "404"
+            ], 404);
+        }else{
+            return  $usuarios;
+        }
     }
 
     /**
@@ -37,7 +51,16 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-        return Usuario::get()->where('id_usuario', '=', $id);
+        $usuario = Usuario::where('id_usuario', $id)->first();
+
+        if($usuario == null){
+            return response()->json([
+                "error" => "usuario no encontrado",
+                "codigo" => "404"
+            ], 404);
+        }else{
+            return  $usuario;
+        }
     }
 
     /**

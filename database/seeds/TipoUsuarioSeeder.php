@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use \App\TipoUsuario;
 
 class TipoUsuarioSeeder extends Seeder
 {
@@ -11,6 +12,15 @@ class TipoUsuarioSeeder extends Seeder
      */
     public function run()
     {
-        //
+        TipoUsuario::create([
+            'Descripcion' => 'Administrador'
+        ]);
+        TipoUsuario::create([
+            'Descripcion' => 'Cliente'
+        ]);
+
+        TipoUsuario::create([
+            'Descripcion' => 'Empleado'
+        ]);
     }
 }

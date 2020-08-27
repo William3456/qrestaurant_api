@@ -2,8 +2,13 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use \Illuminate\Auth\AuthenticationException;
+use \Illuminate\Validation\ValidationException;
+use \Illuminate\Database\QueryException;
+use \Symfony\Component\HttpKernel\Exception\HttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -50,6 +55,38 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if($exception instanceof ModelNotFoundException){
+            return response()->json([
+                'error' => 'Error de modelo '.$exception->getMessage(),
+                'code' =>400
+            ], 400);
+        }
+        if($exception instanceof ValidationException){
+            return response()->json([
+                'error' => $exception->validator->errors(),
+                'code' =>400
+            ], 400);
+        }
+        if($exception instanceof QueryException){
+            return response()->json([
+                'error' => 'Error de consulta '. $exception->getMessage(),
+                'code' => 400
+            ], 400);
+        }
+
+        if($exception instanceof HttpException){
+            return response()->json([
+                'error' => 'Error de ruta',
+                'code' => 404
+            ], 404);
+        }
+        if($exception instanceof AuthenticationException){
+            return response()->json([
+                'error' => 'Error de autenticación',
+                'code' => 401
+            ], 401);
+        }
+
         return parent::render($request, $exception);
     }
 }
