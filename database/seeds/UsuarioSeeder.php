@@ -12,6 +12,7 @@ class UsuarioSeeder extends Seeder
      */
     public function run()
     {
+        Usuario::query()->delete();
         Usuario::create([
             'id_tipo_usuario' => 1,
             'nombre' => 'William Alexis',
@@ -33,7 +34,7 @@ class UsuarioSeeder extends Seeder
                 'password' => base64_encode($faker->password),
                 'correo' => $faker->email,
                 'estado' => rand(0, 1),
-                'telefono' => '77' . $i . '7-89' . rand(10, 99),
+                'telefono' => '7' . rand(10, 99) . '7-89' . rand(10, 99),
                 'direccion' => $faker->address
             ]);
         }

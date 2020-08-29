@@ -11,7 +11,7 @@ class UsuarioController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('client_credentials')->except('store', 'login', 'logout');
+        $this->middleware('client_credentials')->except('store', 'login');
     }
 
     /**
@@ -22,13 +22,13 @@ class UsuarioController extends Controller
     public function index()
     {
         $usuarios = Usuario::all();
-        if($usuarios == null){
+        if ($usuarios == null) {
             return response()->json([
                 "error" => "No se encontraron registros",
                 "codigo" => "404"
             ], 404);
-        }else{
-            return  $usuarios;
+        } else {
+            return $usuarios;
         }
     }
 
@@ -53,13 +53,13 @@ class UsuarioController extends Controller
     {
         $usuario = Usuario::where('id_usuario', $id)->first();
 
-        if($usuario == null){
+        if ($usuario == null) {
             return response()->json([
                 "error" => "usuario no encontrado",
                 "codigo" => "404"
             ], 404);
-        }else{
-            return  $usuario;
+        } else {
+            return $usuario;
         }
     }
 
@@ -95,5 +95,46 @@ class UsuarioController extends Controller
     public function destroy(Usuario $usuario)
     {
         //
+    }
+
+    public function login(Request $request)
+    {
+        $validatedData = $request->validate([
+            'usuario' => 'required',
+            'password' => 'required',
+        ]);
+
+        $usuario = \request('usuario');
+        $password = \request('password');
+
+        $usuarioFila = Usuario::where('correo', $usuario)->first();
+
+        if ($usuarioFila != null) {
+            if ($usuarioFila->estado != 0) {
+                $passb64 = base64_encode($password);
+                if (!strcmp($passb64, $usuarioFila->password)) {
+                    return response()->json([
+                        'msj' => 'Login correcto',
+                        'error' => '',
+                        'codigo' => 200
+                    ], 200);
+                } else {
+                    return response()->json([
+                        'error' => 'Contraseña inválida',
+                        'codigo' => 403
+                    ], 403);
+                }
+            } else {
+                return response()->json([
+                    'error' => 'Usuario inactivo',
+                    'codigo' => 403
+                ], 403);
+            }
+        } else {
+            return response()->json([
+                'error' => 'Usuario no encontrado',
+                'codigo' => 404
+            ], 404);
+        }
     }
 }

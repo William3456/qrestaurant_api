@@ -14,15 +14,18 @@ class CreateRestaurantesTable extends Migration
     public function up()
     {
         Schema::create('restaurantes', function (Blueprint $table) {
-            $table->bigIncrements('id_restaurante');
-            $table->string("nombre",255);
+            $table->id('id_restaurante');
+            $table->string("nombre", 255);
             $table->unsignedBigInteger('num_mesas');
-            $table->unsignedBigInteger('id_usuario');
-            $table->string("telefono",9);
-            $table->string("direccion",255);
-            $table->string("correo",255)->unique();
+            $table->foreignId('id_usuario')->nullable()
+                ->constrained('usuarios', 'id_usuario')
+                ->cascadeOnDelete();
+            //Si le pongo onDelete('set null') en lugar de cascade, se elimina el usuario y lo asociado a este queda en null
+
+            $table->string("telefono", 9);
+            $table->string("direccion", 255);
+            $table->string("correo", 255)->unique();
             $table->timestamps();
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
         });
     }
 

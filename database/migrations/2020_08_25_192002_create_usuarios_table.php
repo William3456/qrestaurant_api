@@ -14,8 +14,8 @@ class CreateUsuariosTable extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->bigIncrements('id_usuario');
-            $table->unsignedBigInteger("id_tipo_usuario")->default('1');;
+            $table->id('id_usuario');
+            $table->foreignId("id_tipo_usuario")->constrained('tipo_usuarios', 'id_tipo_usuario');
             $table->unsignedBigInteger("restaurante_asociado")->nullable();
             $table->string("nombre",255);
             $table->string("apellido",255);
@@ -26,7 +26,6 @@ class CreateUsuariosTable extends Migration
             $table->string("direccion",255);
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('id_tipo_usuario')->references('id_tipo_usuario')->on('tipo_usuarios');
         });
     }
 
