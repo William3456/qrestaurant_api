@@ -11,7 +11,7 @@ class UsuarioController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('client_credentials')->except('store', 'login', 'index');
+        //$this->middleware('client_credentials')->except('store', 'login', 'index');
     }
 
     /**
