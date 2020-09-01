@@ -122,22 +122,22 @@ class UsuarioController extends Controller
                     return response()->json([
                         'msj' => '',
                         'error' => 'Contraseña inválida',
-                        'codigo' => 403
-                    ], 403);
+                        'codigo' => 200
+                    ], 200);
                 }
             } else {
                 return response()->json([
                     'msj' => '',
                     'error' => 'Usuario inactivo',
-                    'codigo' => 403
-                ], 403);
+                    'codigo' => 200
+                ], 200);
             }
         } else {
             return response()->json([
                 'msj' => '',
                 'error' => 'Usuario no encontrado',
-                'codigo' => 404
-            ], 404);
+                'codigo' => 200
+            ], 200);
         }
     }
 }
