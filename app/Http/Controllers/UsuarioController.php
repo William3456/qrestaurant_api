@@ -71,7 +71,6 @@ class UsuarioController extends Controller
      */
     public function edit(Usuario $usuario)
     {
-        //
     }
 
     /**
