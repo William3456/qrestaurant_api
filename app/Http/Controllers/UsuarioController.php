@@ -117,7 +117,7 @@ class UsuarioController extends Controller
                         'msj' => 'Login correcto',
                         'error' => '',
                         'codigo' => 200
-                    ], 200);
+                    ]);
                 } else {
                     return response()->json([
                         'msj' => '',
