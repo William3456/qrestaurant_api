@@ -17,7 +17,7 @@ class UsuarioController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
@@ -25,7 +25,7 @@ class UsuarioController extends Controller
         if ($usuarios == null) {
             return response()->json([
                 "error" => "No se encontraron registros",
-                "codigo" => "404"
+                "codigo" => "404",
             ], 404);
         } else {
             return $usuarios;
@@ -46,8 +46,8 @@ class UsuarioController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Usuario $usuario
-     * @return \Illuminate\Http\Response
+     * @param \App\ $usuario
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show($id)
     {
@@ -89,7 +89,7 @@ class UsuarioController extends Controller
      * Remove the specified resource from storage.
      *
      * @param \App\Usuario $usuario
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy(Usuario $usuario)
     {
@@ -114,27 +114,25 @@ class UsuarioController extends Controller
                 if (!strcmp($passb64, $usuarioFila->password)) {
                     return response()->json([
                         'msj' => 'Login correcto',
-                        'error' => '',
-                        'codigo' => 200
+                        'codigo' => 200,
+                        'usuario' => $usuarioFila
                     ]);
                 } else {
                     return response()->json([
-                        'msj' => '',
-                        'error' => 'Contraseña inválida',
+                        'msj' => 'Contraseña inválida',
                         'codigo' => 405
                     ]);
                 }
             } else {
                 return response()->json([
-                    'msj' => '',
-                    'error' => 'Usuario inactivo',
-                    'codigo' => 403
+                    'msj' => 'Usuario inactivo',
+                    'codigo' => 403,
+
                 ]);
             }
         } else {
             return response()->json([
-                'msj' => '',
-                'error' => 'Usuario no encontrado',
+                'msj' => 'Usuario no encontrado',
                 'codigo' => 404
             ]);
         }
