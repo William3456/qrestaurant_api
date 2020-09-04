@@ -115,25 +115,35 @@ class UsuarioController extends Controller
                     return response()->json([
                         'msj' => 'Login correcto',
                         'codigo' => 200,
-                        'usuario' => $usuarioFila
+                        'nombre_usuario' => $usuarioFila->nombre,
+                        'apellido_usuario' => $usuarioFila->apellido,
+                        'id_tipo_usuario' => $usuarioFila->id_tipo_usuario,
                     ]);
                 } else {
                     return response()->json([
                         'msj' => 'Contraseña inválida',
-                        'codigo' => 405
+                        'codigo' => 405,
+                        'nombre_usuario' => null,
+                        'apellido_usuario' => null,
+                        'id_tipo_usuario' => null,
                     ]);
                 }
             } else {
                 return response()->json([
                     'msj' => 'Usuario inactivo',
                     'codigo' => 403,
-
+                    'nombre_usuario' => null,
+                    'apellido_usuario' => null,
+                    'id_tipo_usuario' => null,
                 ]);
             }
         } else {
             return response()->json([
                 'msj' => 'Usuario no encontrado',
-                'codigo' => 404
+                'codigo' => 404,
+                'nombre_usuario' => null,
+                'apellido_usuario' => null,
+                'id_tipo_usuario' => null,
             ]);
         }
     }
