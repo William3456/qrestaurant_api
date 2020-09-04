@@ -51,7 +51,7 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-        $usuario = Usuario::where('id_usuario', $id)->first();
+        $usuario = Usuario::where('id_usuario', $id)->orWhere('correo', $id)->first();
 
         if ($usuario == null) {
             return response()->json([
