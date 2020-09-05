@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMenuRestaurantesTable extends Migration
+class CreatePedidosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateMenuRestaurantesTable extends Migration
      */
     public function up()
     {
-        Schema::create('menu_restaurantes', function (Blueprint $table) {
-            $table->id('id_menu');
-            $table->string('titulo', 255);
-            $table->string('descripcion', 255);
-            $table->decimal('precio', 6, 2);
-            $table->decimal('descuento', 3, 2);
-            $table->string('url_img', 255);
+        Schema::create('pedidos', function (Blueprint $table) {
+            $table->id('id_pedido');
+            $table->string("descripcion",255);
+            $table->decimal('total', 9, 2);
             $table->foreignId("id_restaurante")->constrained('restaurantes', 'id_restaurante');
-            $table->foreignId("id_tipo_menu")->constrained('tipo_menu', 'id_tipo_menu');
+            $table->foreignId("id_usuario")->constrained('usuarios', 'id_usuario');
             $table->foreignId("id_estado")->constrained('estados', 'id_estado');
             $table->timestamps();
         });
@@ -34,6 +31,6 @@ class CreateMenuRestaurantesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu_restaurantes');
+        Schema::dropIfExists('pedidos');
     }
 }

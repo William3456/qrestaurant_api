@@ -19,7 +19,7 @@ class UsuarioSeeder extends Seeder
             'apellido' => 'Lazo Vásquez',
             'password' => base64_encode('123'),
             'correo' => 'williamvasquez962@gmail.com',
-            'estado' => 1,
+            'id_estado' => 1,
             'telefono' => '7772-8911',
             'direccion' => 'San Salvador'
         ]);
@@ -33,7 +33,7 @@ class UsuarioSeeder extends Seeder
                 'apellido' => $faker->lastName,
                 'password' => base64_encode($faker->password),
                 'correo' => $faker->email,
-                'estado' => rand(0, 1),
+                'id_estado' => rand(1, 3),
                 'telefono' => '7' . rand(10, 99) . '7-89' . rand(10, 99),
                 'direccion' => $faker->address
             ]);

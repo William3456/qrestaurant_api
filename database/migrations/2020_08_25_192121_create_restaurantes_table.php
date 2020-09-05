@@ -18,13 +18,14 @@ class CreateRestaurantesTable extends Migration
             $table->string("nombre", 255);
             $table->unsignedBigInteger('num_mesas');
             $table->foreignId('id_usuario')->nullable()
-                ->constrained('usuarios', 'id_usuario')
-                ->cascadeOnDelete();
+                ->constrained('usuarios', 'id_usuario');
+                //->cascadeOnDelete();
             //Si le pongo onDelete('set null') en lugar de cascade, se elimina el usuario y lo asociado a este queda en null
 
             $table->string("telefono", 9);
             $table->string("direccion", 255);
             $table->string("correo", 255)->unique();
+            $table->foreignId("id_estado")->constrained('estados', 'id_estado');
             $table->timestamps();
         });
     }
