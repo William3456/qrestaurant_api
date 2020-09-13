@@ -59,32 +59,32 @@ class Handler extends ExceptionHandler
             return response()->json([
                 'error' => 'Error de modelo '.$exception->getMessage(),
                 'code' =>400
-            ], 400);
+            ]);
         }
         if($exception instanceof ValidationException){
             return response()->json([
                 'error' => $exception->validator->errors(),
                 'code' =>400
-            ], 400);
+            ]);
         }
         if($exception instanceof QueryException){
             return response()->json([
                 'error' => 'Error de consulta '. $exception->getMessage(),
                 'code' => 400
-            ], 400);
+            ]);
         }
 
         if($exception instanceof HttpException){
             return response()->json([
                 'error' => 'Error de ruta',
                 'code' => 404
-            ], 404);
+            ]);
         }
         if($exception instanceof AuthenticationException){
             return response()->json([
                 'error' => 'Error de autenticación',
                 'code' => 401
-            ], 401);
+            ]);
         }
 
         return parent::render($request, $exception);
