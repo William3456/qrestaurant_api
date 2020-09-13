@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_192137_create_menu_restaurantes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_25_192137_create_menu_restaurantes_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +39,11 @@
     <setting file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/routes/api.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/database/seeds/TipoUsuarioSeeder.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192137_create_menu_restaurantes_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/routes/web.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192121_create_restaurantes_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192001_create_tipo_usuarios_table.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192002_create_usuarios_table.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
