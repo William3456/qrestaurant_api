@@ -128,6 +128,7 @@ class UsuarioController extends Controller
                 'telefono' => $request->telefono,
                 'direccion' => $request->direccion
             ]);
+
         if($valor == 1){
             return response()->json([
                 'msj' => 'Usuario actualizado',

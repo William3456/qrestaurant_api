@@ -20,9 +20,20 @@ Route::middleware('auth:api')->get('/usuario', function (Request $request) {
 });
 
 //Usuario
-Route::post('usuario/crear', 'UsuarioController@store');
-Route::post('login', 'UsuarioController@login');
-Route::get('usuario', 'UsuarioController@index');
-Route::get('usuario/{idUser}', 'UsuarioController@show');
-Route::put('usuario/actualizar', 'UsuarioController@update');
-Route::delete('usuario/eliminar/{email}', 'UsuarioController@delete');
+Route::post('usuario/crear', 'UsuarioController@store'); //Crea un nuevo usuario
+Route::post('login', 'UsuarioController@login'); //Hace el logeo
+Route::get('usuario', 'UsuarioController@index'); // Obtiene todos los usuarios
+Route::get('usuario/{idUser}', 'UsuarioController@show'); //Obtiene un usuario por su id o correo
+Route::put('usuario/actualizar', 'UsuarioController@update'); //Actualiza un usuario
+Route::delete('usuario/eliminar/{email}', 'UsuarioController@delete'); //Elimina un usuario por su correo
+
+//Menús
+Route::get('menu', 'MenuRestauranteController@index'); //Devuelve todos los menús
+Route::get('menu/{idMenu}', 'MenuRestauranteController@show'); //Devuelve un menú por id
+Route::get('menu/restaurante/{idRestaurante}',
+    'MenuRestauranteController@menuByRestaurante'); //Devuelve los menús ligados al restaurante
+Route::get('menu/tipo/{idTipo}',
+    'MenuRestauranteController@menuByTipo'); //Devuelve los menús por tipo
+Route::post('menu/crear', 'MenuRestauranteController@store'); //Crea un menú
+Route::put('menu/actualizar', 'MenuRestauranteController@update'); //Actualiza un menú por su ID
+Route::delete('menu/eliminar/{idMenu}', 'MenuRestauranteController@delete'); //Elimina un menú por su ID
