@@ -109,7 +109,7 @@ class UsuarioController extends Controller
         $usuarioFila = Usuario::where('correo', $usuario)->first();
 
         if ($usuarioFila != null) {
-            if ($usuarioFila->estado != 0) {
+            if ($usuarioFila->estado != 2) {
                 $passb64 = base64_encode($password);
                 if (!strcmp($passb64, $usuarioFila->password)) {
                     return response()->json([
