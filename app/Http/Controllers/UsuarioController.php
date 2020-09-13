@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\Usuario;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Symfony\Component\Console\Input\Input;
 
 class UsuarioController extends Controller
 {
     public function __construct()
     {
-       // $this->middleware('client_credentials')->except('store', 'login', 'index');
+        // $this->middleware('client_credentials')->except('store', 'login', 'index');
     }
 
     /**
@@ -26,7 +27,7 @@ class UsuarioController extends Controller
             return response()->json([
                 "error" => "No se encontraron registros",
                 "codigo" => "404",
-            ], 404);
+            ]);
         } else {
             return $usuarios;
         }
@@ -40,7 +41,27 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        return Usuario::create($request->all());
+        $validatedData = $request->validate([
+            'id_tipo_usuario' => 'required|exists:tipo_usuarios,id_tipo_usuario',
+            'id_estado' => 'required|exists:estados,id_estado',
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'password' => 'required',
+            'correo' => 'required|email|unique:usuarios',
+            'telefono' => 'required|unique:usuarios'
+        ]);
+
+        return Usuario::create([
+            'id_tipo_usuario' => $request->id_tipo_usuario,
+            'restaurante_asociado' => $request->id_restaurante_asociado,
+            'id_estado' => $request->id_estado,
+            'nombre' => $request->nombre,
+            'apellido' => $request->apellido,
+            'password' => base64_encode($request->password),
+            'correo' => $request->correo,
+            'telefono' => $request->telefono,
+            'direccion' => $request->direccion
+        ]);
     }
 
     /**
@@ -57,7 +78,7 @@ class UsuarioController extends Controller
             return response()->json([
                 "error" => "usuario no encontrado",
                 "codigo" => "404"
-            ], 404);
+            ]);
         } else {
             return $usuario;
         }
@@ -80,9 +101,45 @@ class UsuarioController extends Controller
      * @param \App\Usuario $usuario
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Usuario $usuario)
+    public function update(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'id_tipo_usuario' => 'required|exists:tipo_usuarios,id_tipo_usuario',
+            'id_estado' => 'required|exists:estados,id_estado',
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'password' => 'required',
+            'correo' => 'required|email',
+            'telefono' => [
+                'required',
+                //Se utiliza para validar campos unicos al hacer update
+                Rule::unique('usuarios')->ignore($request->correo, 'correo'),
+            ],
+        ]);
+        $email = $request->correo;
+        $valor = Usuario::where('correo', $email)
+            ->update([
+                'id_tipo_usuario' => $request->id_tipo_usuario,
+                'restaurante_asociado' => $request->id_restaurante_asociado,
+                'id_estado' => $request->id_estado,
+                'nombre' => $request->nombre,
+                'apellido' => $request->apellido,
+                'password' => base64_encode($request->password),
+                'telefono' => $request->telefono,
+                'direccion' => $request->direccion
+            ]);
+
+        if($valor == 1){
+            return response()->json([
+                'msj' => 'Usuario actualizado',
+                'codigo' => 200,
+            ]);
+        }else{
+            return response()->json([
+                'msj' => 'Error al actualizar',
+                'codigo' => 400,
+            ]);
+        }
     }
 
     /**
@@ -91,9 +148,27 @@ class UsuarioController extends Controller
      * @param \App\Usuario $usuario
      * @return \Illuminate\Http\JsonResponse
      */
-    public function destroy(Usuario $usuario)
+    public function delete($email)
     {
-        //
+        if (Usuario::where('correo',$email)->exists()) {
+            $respuesta = Usuario::where('correo',$email)->delete();
+            if($respuesta == 1){
+                return response()->json([
+                    'msj' => 'Usuario eliminado',
+                    'codigo' => 200,
+                ]);
+            }else{
+                return response()->json([
+                    'msj' => 'Error al eliminar',
+                    'codigo' => 500,
+                ]);
+            }
+        }else{
+            return response()->json([
+                'msj' => 'No existe el usuario',
+                'codigo' => 404,
+            ]);
+        }
     }
 
     public function login(Request $request)
