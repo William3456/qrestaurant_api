@@ -19,6 +19,7 @@ class CreateMenuRestaurantesTable extends Migration
             $table->string('descripcion', 255);
             $table->decimal('precio', 6, 2);
             $table->decimal('descuento', 3, 2);
+            $table->bigInteger('promocion', );
             $table->string('url_img', 255);
             $table->foreignId("id_restaurante")->constrained('restaurantes', 'id_restaurante');
             $table->foreignId("id_tipo_menu")->constrained('tipo_menu', 'id_tipo_menu');
