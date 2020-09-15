@@ -18,13 +18,13 @@ class CreateUsuariosTable extends Migration
             $table->foreignId("id_tipo_usuario")->constrained('tipo_usuarios', 'id_tipo_usuario');
             $table->unsignedBigInteger("restaurante_asociado")->nullable();
             $table->foreignId("id_estado")->constrained('estados', 'id_estado');
-            $table->string("nombre",255);
-            $table->string("apellido",255);
+            $table->string("nombre",255)->nullable();
+            $table->string("apellido",255)->nullable();
             $table->string("password",255);
             $table->string("correo",255)->unique();
-            $table->string("telefono",9)->unique();
-            $table->string("direccion",255);
-            $table->rememberToken();
+            $table->string("telefono",9)->unique()->nullable();
+            $table->string("direccion",255)->nullable();
+            $table->rememberToken()->nullable();
             $table->timestamps();
         });
     }
