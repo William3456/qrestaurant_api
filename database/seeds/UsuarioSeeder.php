@@ -21,7 +21,8 @@ class UsuarioSeeder extends Seeder
             'correo' => 'williamvasquez962@gmail.com',
             'id_estado' => 1,
             'telefono' => '7772-8911',
-            'direccion' => 'San Salvador'
+            'direccion' => 'San Salvador',
+            'tipo_creacion' => null
         ]);
 
         $faker = \Faker\Factory::create();
@@ -35,7 +36,8 @@ class UsuarioSeeder extends Seeder
                 'correo' => $faker->email,
                 'id_estado' => rand(1, 3),
                 'telefono' => '7' . rand(10, 99) . '7-89' . rand(10, 99),
-                'direccion' => $faker->address
+                'direccion' => $faker->address,
+                'tipo_creacion' => null
             ]);
         }
     }

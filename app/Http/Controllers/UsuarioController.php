@@ -48,7 +48,8 @@ class UsuarioController extends Controller
             'apellido' => 'required',
             'password' => 'required',
             'correo' => 'required|email|unique:usuarios',
-            'telefono' => 'unique:usuarios'
+            'telefono' => 'unique:usuarios',
+            'tipo_creacion' => 'required'
         ]);
 
         return Usuario::create([
@@ -60,7 +61,8 @@ class UsuarioController extends Controller
             'password' => base64_encode($request->password),
             'correo' => $request->correo,
             'telefono' => $request->telefono,
-            'direccion' => $request->direccion
+            'direccion' => $request->direccion,
+            'tipo_creacion' => $request->tipo_creacion, //1- normal | 2-google
         ]);
     }
 

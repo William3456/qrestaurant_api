@@ -24,6 +24,7 @@ class CreateUsuariosTable extends Migration
             $table->string("correo",255)->unique();
             $table->string("telefono",9)->unique()->nullable();
             $table->string("direccion",255)->nullable();
+            $table->bigInteger("tipo_creacion")->nullable();
             $table->rememberToken()->nullable();
             $table->timestamps();
         });
