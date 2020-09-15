@@ -42,13 +42,13 @@ class UsuarioController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'id_tipo_usuario' => 'required|exists:tipo_usuarios,id_tipo_usuario',
+            'id_tipo_usuario' => 'exists:tipo_usuarios,id_tipo_usuario',
             'id_estado' => 'required|exists:estados,id_estado',
             'nombre' => 'required',
             'apellido' => 'required',
             'password' => 'required',
             'correo' => 'required|email|unique:usuarios',
-            'telefono' => 'required|unique:usuarios'
+            'telefono' => 'unique:usuarios'
         ]);
 
         return Usuario::create([
