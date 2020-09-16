@@ -52,7 +52,7 @@ class UsuarioController extends Controller
             'tipo_creacion' => 'required'
         ]);
 
-        return Usuario::create([
+        $usuario =  Usuario::create([
             'id_tipo_usuario' => $request->id_tipo_usuario,
             'restaurante_asociado' => $request->id_restaurante_asociado,
             'id_estado' => $request->id_estado,
@@ -63,6 +63,11 @@ class UsuarioController extends Controller
             'telefono' => $request->telefono,
             'direccion' => $request->direccion,
             'tipo_creacion' => $request->tipo_creacion, //1- normal | 2-google
+        ]);
+        return response()->json([
+            "error" => "",
+            "codigo" => "200",
+            "data" => $usuario,
         ]);
     }
 
