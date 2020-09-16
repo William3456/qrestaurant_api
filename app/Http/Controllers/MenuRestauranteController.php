@@ -57,8 +57,12 @@ class MenuRestauranteController extends Controller
             'id_tipo_menu' => 'required|exists:tipo_menu,id_tipo_menu',
             'id_estado' => 'required|exists:estados,id_estado'
         ]);
-
-        return MenuRestaurante::create($request->all());
+        $menu = MenuRestaurante::create($request->all());
+        return response()->json([
+            "error" => "",
+            "codigo" => "200",
+            "data" => $menu
+        ]);
     }
 
     /**
