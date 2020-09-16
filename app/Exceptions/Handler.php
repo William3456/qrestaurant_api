@@ -58,32 +58,32 @@ class Handler extends ExceptionHandler
         if($exception instanceof ModelNotFoundException){
             return response()->json([
                 'error' => 'Error de modelo '.$exception->getMessage(),
-                'code' =>400
+                'codigo' =>400
             ]);
         }
         if($exception instanceof ValidationException){
             return response()->json([
                 'error' => $exception->validator->errors(),
-                'code' =>400
+                'codigo' =>400
             ]);
         }
         if($exception instanceof QueryException){
             return response()->json([
                 'error' => 'Error de consulta '. $exception->getMessage(),
-                'code' => 400
+                'codigo' => 400
             ]);
         }
 
         if($exception instanceof HttpException){
             return response()->json([
                 'error' => 'Error de ruta',
-                'code' => 404
+                'codigo' => 404
             ]);
         }
         if($exception instanceof AuthenticationException){
             return response()->json([
                 'error' => 'Error de autenticación',
-                'code' => 401
+                'codigo' => 401
             ]);
         }
 
