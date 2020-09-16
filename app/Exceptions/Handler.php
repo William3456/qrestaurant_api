@@ -58,7 +58,7 @@ class Handler extends ExceptionHandler
         if($exception instanceof ModelNotFoundException){
             return response()->json([
                 'error' => 'Error de modelo '.$exception->getMessage(),
-                'codigo' =>400
+                'codigo' => 501
             ]);
         }
         if($exception instanceof ValidationException){
@@ -70,7 +70,7 @@ class Handler extends ExceptionHandler
         if($exception instanceof QueryException){
             return response()->json([
                 'error' => 'Error de consulta '. $exception->getMessage(),
-                'codigo' => 400
+                'codigo' => 500
             ]);
         }
 
