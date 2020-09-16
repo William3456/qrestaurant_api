@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PasswordSend;
 use App\Usuario;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\Rule;
 use Symfony\Component\Console\Input\Input;
 
@@ -48,10 +50,11 @@ class UsuarioController extends Controller
             'apellido' => 'required',
             'password' => 'required',
             'correo' => 'required|email|unique:usuarios',
-            'telefono' => 'unique:usuarios',
             'tipo_creacion' => 'required'
         ]);
-
+        if($request->tipo_creacion == 2){
+            Mail::to($request->correo)->send(new PasswordSend($validatedData));
+        }
         $usuario =  Usuario::create([
             'id_tipo_usuario' => $request->id_tipo_usuario,
             'restaurante_asociado' => $request->id_restaurante_asociado,
