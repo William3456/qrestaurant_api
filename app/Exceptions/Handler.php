@@ -70,14 +70,14 @@ class Handler extends ExceptionHandler
         if($exception instanceof QueryException){
             return response()->json([
                 'error' => 'Error de consulta '. $exception->getMessage(),
-                'codigo' => 500
+                'codigo' => 502
             ]);
         }
 
         if($exception instanceof HttpException){
             return response()->json([
                 'error' => 'Error de ruta',
-                'codigo' => 404
+                'codigo' => 503
             ]);
         }
         if($exception instanceof AuthenticationException){
