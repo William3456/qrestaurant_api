@@ -161,18 +161,20 @@ class UsuarioController extends Controller
             $respuesta = Usuario::where('correo',$email)->delete();
             if($respuesta == 1){
                 return response()->json([
-                    'msj' => 'Usuario eliminado',
+                    'error' => '',
                     'codigo' => 200,
                 ]);
             }else{
                 return response()->json([
-                    'msj' => 'Error al eliminar',
+                    'error' => 'No se pudo eliminar',
                     'codigo' => 500,
                 ]);
             }
         }else{
             return response()->json([
-                'msj' => 'No existe el usuario',
+                'error' => 'Usuario no encontrado
+                }
+                ',
                 'codigo' => 404,
             ]);
         }
