@@ -1,20 +1,77 @@
-<!doctype html>
-<html ⚡4email>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+      style="width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
 <head>
-    <meta charset="utf-8">
-    <style amp4email-boilerplate>body {
-            visibility: hidden
-        }</style>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-
-    <style amp-custom>
-        a[x-apple-data-detectors] {
-            color: inherit;
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'none'; connect-src 'none'; object-src 'none'; form-action 'none';">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
+    <title>Nueva plantilla de correo electrónico 2020-08-14</title>
+    <!--[if (mso 16)]>
+    <style type="text/css">
+        a {
             text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
+        }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style>sup {
+        font-size: 100% !important;
+    }</style><![endif]-->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG></o:AllowPNG>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+    <link rel="shortcut icon" type="image/png" href="https://stripo.email/assets/img/favicon.png">
+    <style type="text/css">
+        .rollover:hover .rollover-first {
+            max-height: 0px !important;
+            display: none !important;
+        }
+
+        .rollover:hover .rollover-second {
+            max-height: none !important;
+            display: block !important;
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .es-button {
+            mso-style-priority: 100 !important;
+            text-decoration: none !important;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
         }
 
         .es-desk-hidden {
@@ -24,890 +81,569 @@
             width: 0;
             max-height: 0;
             line-height: 0;
+            mso-hide: all;
         }
 
         .es-button-border:hover {
-            border-style: solid solid solid solid;
-            background: #0B317E;
-            border-color: #42D159 #42D159 #42D159 #42D159;
+            border-style: solid solid solid solid !important;
+            background: #0b317e !important;
+            border-color: #42d159 #42d159 #42d159 #42d159 !important;
         }
 
         .es-button-border:hover a.es-button {
-            background: #0B317E;
-            border-color: #0B317E;
-        }
-
-        s {
-            text-decoration: line-through;
-        }
-
-        body {
-            width: 100%;
-            font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0px;
-        }
-
-        table td, html, body, .es-wrapper {
-            padding: 0;
-            Margin: 0;
-        }
-
-        .es-content, .es-header, .es-footer {
-            table-layout: fixed;
-            width: 100%;
-        }
-
-        p, hr {
-            Margin: 0;
-        }
-
-        h1, h2, h3, h4, h5 {
-            Margin: 0;
-            line-height: 120%;
-            font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
-        }
-
-        .es-left {
-            float: left;
-        }
-
-        .es-right {
-            float: right;
-        }
-
-        .es-p5 {
-            padding: 5px;
-        }
-
-        .es-p5t {
-            padding-top: 5px;
-        }
-
-        .es-p5b {
-            padding-bottom: 5px;
-        }
-
-        .es-p5l {
-            padding-left: 5px;
-        }
-
-        .es-p5r {
-            padding-right: 5px;
-        }
-
-        .es-p10 {
-            padding: 10px;
-        }
-
-        .es-p10t {
-            padding-top: 10px;
-        }
-
-        .es-p10b {
-            padding-bottom: 10px;
-        }
-
-        .es-p10l {
-            padding-left: 10px;
-        }
-
-        .es-p10r {
-            padding-right: 10px;
-        }
-
-        .es-p15 {
-            padding: 15px;
-        }
-
-        .es-p15t {
-            padding-top: 15px;
-        }
-
-        .es-p15b {
-            padding-bottom: 15px;
-        }
-
-        .es-p15l {
-            padding-left: 15px;
-        }
-
-        .es-p15r {
-            padding-right: 15px;
-        }
-
-        .es-p20 {
-            padding: 20px;
-        }
-
-        .es-p20t {
-            padding-top: 20px;
-        }
-
-        .es-p20b {
-            padding-bottom: 20px;
-        }
-
-        .es-p20l {
-            padding-left: 20px;
-        }
-
-        .es-p20r {
-            padding-right: 20px;
-        }
-
-        .es-p25 {
-            padding: 25px;
-        }
-
-        .es-p25t {
-            padding-top: 25px;
-        }
-
-        .es-p25b {
-            padding-bottom: 25px;
-        }
-
-        .es-p25l {
-            padding-left: 25px;
-        }
-
-        .es-p25r {
-            padding-right: 25px;
-        }
-
-        .es-p30 {
-            padding: 30px;
-        }
-
-        .es-p30t {
-            padding-top: 30px;
-        }
-
-        .es-p30b {
-            padding-bottom: 30px;
-        }
-
-        .es-p30l {
-            padding-left: 30px;
-        }
-
-        .es-p30r {
-            padding-right: 30px;
-        }
-
-        .es-p35 {
-            padding: 35px;
-        }
-
-        .es-p35t {
-            padding-top: 35px;
-        }
-
-        .es-p35b {
-            padding-bottom: 35px;
-        }
-
-        .es-p35l {
-            padding-left: 35px;
-        }
-
-        .es-p35r {
-            padding-right: 35px;
-        }
-
-        .es-p40 {
-            padding: 40px;
-        }
-
-        .es-p40t {
-            padding-top: 40px;
-        }
-
-        .es-p40b {
-            padding-bottom: 40px;
-        }
-
-        .es-p40l {
-            padding-left: 40px;
-        }
-
-        .es-p40r {
-            padding-right: 40px;
-        }
-
-        .es-menu td {
-            border: 0;
-        }
-
-        a {
-            font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
-            font-size: 16px;
-            text-decoration: underline;
-        }
-
-        h1 {
-            font-size: 30px;
-            font-style: normal;
-            font-weight: bold;
-            color: #212121;
-        }
-
-        h1 a {
-            font-size: 30px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-style: normal;
-            font-weight: bold;
-            color: #212121;
-        }
-
-        h2 a {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 20px;
-            font-style: normal;
-            font-weight: normal;
-            color: #212121;
-        }
-
-        h3 a {
-            font-size: 20px;
-        }
-
-        p, ul li, ol li {
-            font-size: 16px;
-            font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
-            line-height: 150%;
-        }
-
-        ul li, ol li {
-            Margin-bottom: 15px;
-        }
-
-        .es-menu td a {
-            text-decoration: none;
-            display: block;
-        }
-
-        .es-menu amp-img, .es-button amp-img {
-            vertical-align: middle;
-        }
-
-        .es-wrapper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .es-wrapper-color {
-            background-color: #F8F9FD;
-        }
-
-        .es-content-body {
-            background-color: transparent;
-        }
-
-        .es-content-body p, .es-content-body ul li, .es-content-body ol li {
-            color: #131313;
-        }
-
-        .es-content-body a {
-            color: #2CB543;
-        }
-
-        .es-header {
-            background-color: transparent;
-        }
-
-        .es-header-body {
-            background-color: #FFFFFF;
-        }
-
-        .es-header-body p, .es-header-body ul li, .es-header-body ol li {
-            color: #333333;
-            font-size: 14px;
-        }
-
-        .es-header-body a {
-            color: #1376C8;
-            font-size: 14px;
-        }
-
-        .es-footer {
-            background-color: #F6F6F6;
-        }
-
-        .es-footer-body {
-            background-color: transparent;
-        }
-
-        .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li {
-            color: #131313;
-            font-size: 16px;
-        }
-
-        .es-footer-body a {
-            color: #FFFFFF;
-            font-size: 16px;
-        }
-
-        .es-infoblock, .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li {
-            line-height: 120%;
-            font-size: 12px;
-            color: #FFFFFF;
-        }
-
-        .es-infoblock a {
-            font-size: 12px;
-            color: #FFFFFF;
-        }
-
-        a.es-button {
-            border-style: solid;
-            border-color: #071F4F;
-            border-width: 10px 20px 10px 20px;
-            display: inline-block;
-            background: #071F4F;
-            border-radius: 5px;
-            font-size: 16px;
-            font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
-            font-weight: normal;
-            font-style: normal;
-            line-height: 120%;
-            color: #FFFFFF;
-            text-decoration: none;
-            width: auto;
-            text-align: center;
-        }
-
-        .es-button-border {
-            border-style: solid solid solid solid;
-            border-color: #2CB543 #2CB543 #2CB543 #2CB543;
-            background: #071F4F;
-            border-width: 0px 0px 0px 0px;
-            display: inline-block;
-            border-radius: 5px;
-            width: auto;
-        }
-
-        .es-button img {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .es-p-default {
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-bottom: 0px;
-            padding-left: 20px;
-        }
-
-        .es-p-all-default {
-            padding: 0px;
+            background: #0b317e !important;
+            border-color: #0b317e !important;
         }
 
         @media only screen and (max-width: 600px) {
             .st-br {
-                padding-left: 10px;
-                padding-right: 10px
+                padding-left: 10px !important;
+                padding-right: 10px !important
             }
 
             p, ul li, ol li, a {
-                font-size: 16px;
-                line-height: 150%
+                font-size: 16px !important;
+                line-height: 150% !important
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 30px !important;
                 text-align: center;
-                line-height: 120%
+                line-height: 120% !important
             }
 
             h2 {
-                font-size: 26px;
+                font-size: 26px !important;
                 text-align: center;
-                line-height: 120%
+                line-height: 120% !important
             }
 
             h3 {
-                font-size: 20px;
+                font-size: 20px !important;
                 text-align: center;
-                line-height: 120%
+                line-height: 120% !important
             }
 
             h1 a {
-                font-size: 30px;
+                font-size: 30px !important;
                 text-align: center
             }
 
             h2 a {
-                font-size: 26px;
+                font-size: 26px !important;
                 text-align: center
             }
 
             h3 a {
-                font-size: 20px;
+                font-size: 20px !important;
                 text-align: center
             }
 
             .es-menu td a {
-                font-size: 14px
+                font-size: 14px !important
             }
 
             .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a {
-                font-size: 16px
+                font-size: 16px !important
             }
 
             .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a {
-                font-size: 14px
+                font-size: 14px !important
             }
 
             .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a {
-                font-size: 12px
+                font-size: 12px !important
             }
 
             *[class="gmail-fix"] {
-                display: none
+                display: none !important
             }
 
             .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h3 {
-                text-align: center
+                text-align: center !important
             }
 
             .es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, .es-m-txt-r h3 {
-                text-align: right
+                text-align: right !important
             }
 
             .es-m-txt-l, .es-m-txt-l h1, .es-m-txt-l h2, .es-m-txt-l h3 {
-                text-align: left
+                text-align: left !important
             }
 
-            .es-m-txt-r amp-img {
-                float: right
-            }
-
-            .es-m-txt-c amp-img {
-                margin: 0 auto
-            }
-
-            .es-m-txt-l amp-img {
-                float: left
+            .es-m-txt-r img, .es-m-txt-c img, .es-m-txt-l img {
+                display: inline !important
             }
 
             .es-button-border {
-                display: block
+                display: block !important
             }
 
             a.es-button {
-                font-size: 16px;
-                display: block;
-                border-left-width: 0px;
-                border-right-width: 0px
+                font-size: 16px !important;
+                display: block !important;
+                border-left-width: 0px !important;
+                border-right-width: 0px !important
             }
 
             .es-btn-fw {
-                border-width: 10px 0px;
-                text-align: center
+                border-width: 10px 0px !important;
+                text-align: center !important
             }
 
             .es-adaptive table, .es-btn-fw, .es-btn-fw-brdr, .es-left, .es-right {
-                width: 100%
+                width: 100% !important
             }
 
             .es-content table, .es-header table, .es-footer table, .es-content, .es-footer, .es-header {
-                width: 100%;
-                max-width: 600px
+                width: 100% !important;
+                max-width: 600px !important
             }
 
             .es-adapt-td {
-                display: block;
-                width: 100%
+                display: block !important;
+                width: 100% !important
             }
 
             .adapt-img {
-                width: 100%;
-                height: auto
+                width: 70% !important;
+                height: auto !important
             }
 
-            td.es-m-p0 {
-                padding: 0
+            .es-m-p0 {
+                padding: 0 !important
             }
 
-            td.es-m-p0r {
-                padding-right: 0
+            .es-m-p0r {
+                padding-right: 0 !important
             }
 
-            td.es-m-p0l {
-                padding-left: 0
+            .es-m-p0l {
+                padding-left: 0 !important
             }
 
-            td.es-m-p0t {
-                padding-top: 0
+            .es-m-p0t {
+                padding-top: 0 !important
             }
 
-            td.es-m-p0b {
-                padding-bottom: 0
+            .es-m-p0b {
+                padding-bottom: 0 !important
             }
 
-            td.es-m-p20b {
-                padding-bottom: 20px
+            .es-m-p20b {
+                padding-bottom: 20px !important
             }
 
             .es-mobile-hidden, .es-hidden {
-                display: none
+                display: none !important
             }
 
             tr.es-desk-hidden, td.es-desk-hidden, table.es-desk-hidden {
-                width: auto;
-                overflow: visible;
-                float: none;
-                max-height: inherit;
-                line-height: inherit
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                line-height: inherit !important
             }
 
             tr.es-desk-hidden {
-                display: table-row
+                display: table-row !important
             }
 
             table.es-desk-hidden {
-                display: table
+                display: table !important
             }
 
             td.es-desk-menu-hidden {
-                display: table-cell
+                display: table-cell !important
             }
 
             table.es-table-not-adapt, .esd-block-html table {
-                width: auto
+                width: auto !important
             }
 
             table.es-social {
-                display: inline-block
+                display: inline-block !important
             }
 
             table.es-social td {
-                display: inline-block
+                display: inline-block !important
             }
 
-            td.es-m-p5 {
-                padding: 5px
+            .es-m-p5 {
+                padding: 5px !important
             }
 
-            td.es-m-p5t {
-                padding-top: 5px
+            .es-m-p5t {
+                padding-top: 5px !important
             }
 
-            td.es-m-p5b {
-                padding-bottom: 5px
+            .es-m-p5b {
+                padding-bottom: 5px !important
             }
 
-            td.es-m-p5r {
-                padding-right: 5px
+            .es-m-p5r {
+                padding-right: 5px !important
             }
 
-            td.es-m-p5l {
-                padding-left: 5px
+            .es-m-p5l {
+                padding-left: 5px !important
             }
 
-            td.es-m-p10 {
-                padding: 10px
+            .es-m-p10 {
+                padding: 10px !important
             }
 
-            td.es-m-p10t {
-                padding-top: 10px
+            .es-m-p10t {
+                padding-top: 10px !important
             }
 
-            td.es-m-p10b {
-                padding-bottom: 10px
+            .es-m-p10b {
+                padding-bottom: 10px !important
             }
 
-            td.es-m-p10r {
-                padding-right: 10px
+            .es-m-p10r {
+                padding-right: 10px !important
             }
 
-            td.es-m-p10l {
-                padding-left: 10px
+            .es-m-p10l {
+                padding-left: 10px !important
             }
 
-            td.es-m-p15 {
-                padding: 15px
+            .es-m-p15 {
+                padding: 15px !important
             }
 
-            td.es-m-p15t {
-                padding-top: 15px
+            .es-m-p15t {
+                padding-top: 15px !important
             }
 
-            td.es-m-p15b {
-                padding-bottom: 15px
+            .es-m-p15b {
+                padding-bottom: 15px !important
             }
 
-            td.es-m-p15r {
-                padding-right: 15px
+            .es-m-p15r {
+                padding-right: 15px !important
             }
 
-            td.es-m-p15l {
-                padding-left: 15px
+            .es-m-p15l {
+                padding-left: 15px !important
             }
 
-            td.es-m-p20 {
-                padding: 20px
+            .es-m-p20 {
+                padding: 20px !important
             }
 
-            td.es-m-p20t {
-                padding-top: 20px
+            .es-m-p20t {
+                padding-top: 20px !important
             }
 
-            td.es-m-p20r {
-                padding-right: 20px
+            .es-m-p20r {
+                padding-right: 20px !important
             }
 
-            td.es-m-p20l {
-                padding-left: 20px
+            .es-m-p20l {
+                padding-left: 20px !important
             }
 
-            td.es-m-p25 {
-                padding: 25px
+            .es-m-p25 {
+                padding: 25px !important
             }
 
-            td.es-m-p25t {
-                padding-top: 25px
+            .es-m-p25t {
+                padding-top: 25px !important
             }
 
-            td.es-m-p25b {
-                padding-bottom: 25px
+            .es-m-p25b {
+                padding-bottom: 25px !important
             }
 
-            td.es-m-p25r {
-                padding-right: 25px
+            .es-m-p25r {
+                padding-right: 25px !important
             }
 
-            td.es-m-p25l {
-                padding-left: 25px
+            .es-m-p25l {
+                padding-left: 25px !important
             }
 
-            td.es-m-p30 {
-                padding: 30px
+            .es-m-p30 {
+                padding: 30px !important
             }
 
-            td.es-m-p30t {
-                padding-top: 30px
+            .es-m-p30t {
+                padding-top: 30px !important
             }
 
-            td.es-m-p30b {
-                padding-bottom: 30px
+            .es-m-p30b {
+                padding-bottom: 30px !important
             }
 
-            td.es-m-p30r {
-                padding-right: 30px
+            .es-m-p30r {
+                padding-right: 30px !important
             }
 
-            td.es-m-p30l {
-                padding-left: 30px
+            .es-m-p30l {
+                padding-left: 30px !important
             }
 
-            td.es-m-p35 {
-                padding: 35px
+            .es-m-p35 {
+                padding: 35px !important
             }
 
-            td.es-m-p35t {
-                padding-top: 35px
+            .es-m-p35t {
+                padding-top: 35px !important
             }
 
-            td.es-m-p35b {
-                padding-bottom: 35px
+            .es-m-p35b {
+                padding-bottom: 35px !important
             }
 
-            td.es-m-p35r {
-                padding-right: 35px
+            .es-m-p35r {
+                padding-right: 35px !important
             }
 
-            td.es-m-p35l {
-                padding-left: 35px
+            .es-m-p35l {
+                padding-left: 35px !important
             }
 
-            td.es-m-p40 {
-                padding: 40px
+            .es-m-p40 {
+                padding: 40px !important
             }
 
-            td.es-m-p40t {
-                padding-top: 40px
+            .es-m-p40t {
+                padding-top: 40px !important
             }
 
-            td.es-m-p40b {
-                padding-bottom: 40px
+            .es-m-p40b {
+                padding-bottom: 40px !important
             }
 
-            td.es-m-p40r {
-                padding-right: 40px
+            .es-m-p40r {
+                padding-right: 40px !important
             }
 
-            td.es-m-p40l {
-                padding-left: 40px
+            .es-m-p40l {
+                padding-left: 40px !important
             }
         }
     </style>
 </head>
-<body>
-<div class="es-wrapper-color" >
-    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0">
-        <tr>
-            <td valign="top">
-                <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                    <tr>
-                        <td align="center" bgcolor="#f8f9fd" style="background-color: #f8f9fd">
+<body
+    style="width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
+<div class="es-wrapper-color" style="background-color:#F8F9FD">
+    <!--[if gte mso 9]>
+    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+        <v:fill type="tile" color="#f8f9fd"></v:fill>
+    </v:background>
+    <![endif]-->
+    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0"
+           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top">
+        <tbody>
+        <tr style="border-collapse:collapse">
+            <td valign="top" style="padding:0;Margin:0">
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tbody>
+                    <tr style="border-collapse:collapse">
+                        <td align="center" bgcolor="#f8f9fd"
+                            style="padding:0;Margin:0;background-color:#F8F9FD;background-image:url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/10801592857268437.png);background-repeat:no-repeat;background-position:left top"
+                            background="https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/10801592857268437.png">
                             <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
-                                   cellspacing="0" width="600">
-                                <tr>
-                                    <td class="es-p10t es-p15b es-p30r es-p30l" align="left">
-                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td width="540" align="center" valign="top">
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tbody>
+                                <tr style="border-collapse:collapse">
+                                    <td align="left"
+                                        style="Margin:0;padding-top:10px;padding-bottom:15px;padding-left:30px;padding-right:30px">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tbody>
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:540px">
                                                     <table cellpadding="0" cellspacing="0" width="100%"
-                                                           role="presentation">
-                                                        <tr>
-                                                            <td align="center" style="font-size: 0px">
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center" style="padding:0;Margin:0;font-size:0px">
                                                                 <img class="adapt-img"
-                                                                         src="https://ivmfcv.stripocdn.email/content/guids/CABINET_cdb77868ee92e459ccbc33f952543e8b/images/67861600287982189.png"
-                                                                         alt style="display: block" height="200"
-                                                                         width="199" layout="responsive">
-                                                            </td>
+                                                                     src="https://ivmfcv.stripocdn.email/content/guids/CABINET_cdb77868ee92e459ccbc33f952543e8b/images/37381600287838540.png"
+                                                                     alt=""
+                                                                     style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                                     width="213"></td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
-                <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                    <tr>
-                        <td align="center" bgcolor="#071f4f"
-                            style="background-color: #071f4f;background-image: url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/10801592857268437.png);background-repeat: no-repeat;background-position: center top">
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tbody>
+                    <tr style="border-collapse:collapse">
+                        <td align="center" bgcolor="#ffffff"
+                            style="padding:0;Margin:0;background-color:#FFFFFF;background-image:url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/10801592857268437.png);background-repeat:no-repeat;background-position:center top"
+                            background="https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/10801592857268437.png">
                             <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
-                                   cellspacing="0" width="600">
-                                <tr>
-                                    <td class="es-p40t es-p40b es-p30r es-p30l" align="left">
-                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td width="540" align="center" valign="top">
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tbody>
+                                <tr style="border-collapse:collapse">
+                                    <td align="left" bgcolor="#202732"
+                                        style="Margin:0;padding-left:30px;padding-right:30px;padding-top:40px;padding-bottom:40px;background-color:#202732">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tbody>
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:540px">
                                                     <table cellpadding="0" cellspacing="0" width="100%"
-                                                           role="presentation">
-                                                        <tr>
-                                                            <td align="center" height="20"></td>
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center" height="20"
+                                                                style="padding:0;Margin:0"></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td align="left" class="es-p10b"><h1
-                                                                    style="text-align: center;color: #ffffff">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-bottom:10px"><h1
+                                                                    style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#FFFFFF;text-align:center">
                                                                     ¡Bienvenido a QRestaurant!</h1></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td align="center" class="es-p10t es-p10b"><p
-                                                                    style="color: #ffffff">Se ha creado una nueva
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center"
+                                                                style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">
+                                                                    Se ha creado una nueva
                                                                     cuenta, {{ $mensaje['nombre'] }}</p></td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
-                <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                    <tr>
-                        <td align="center" bgcolor="#f4f4f4"
-                            style="background-color: #f4f4f4;background-image: url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/97721592484079114.png);background-repeat: no-repeat;background-position: center top">
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tbody>
+                    <tr style="border-collapse:collapse">
+                        <td align="center" bgcolor="#ffffff"
+                            style="padding:0;Margin:0;background-color:#FFFFFF;background-image:url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/97721592484079114.png);background-repeat:no-repeat;background-position:center top"
+                            background="https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/97721592484079114.png">
                             <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
-                                   cellspacing="0" width="600">
-                                <tr>
-                                    <td class="es-p40t es-p15b es-p20r es-p20l" align="left">
-                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td width="281" align="center" valign="top">
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tbody>
+                                <tr style="border-collapse:collapse">
+                                    <td align="left"
+                                        style="Margin:0;padding-bottom:15px;padding-left:20px;padding-right:20px;padding-top:40px">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tbody>
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
                                                     <table cellpadding="0" cellspacing="0" width="100%"
-                                                           role="presentation">
-                                                        <tr>
-                                                            <td align="left"><h1 style="text-align: center">Tus datos de
-                                                                    inicio de sesión son:</h1></td>
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><h1
+                                                                    style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#212121;text-align:center">
+                                                                    Tus datos de inicio de sesión son:</h1></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td class="es-m-txt-c es-p15t"><p
-                                                                    style="font-size: 16px;text-align: justify"><strong>Correo
-                                                                        / usuario: {{ $mensaje['correo'] }}<br>Contraseña:
-                                                                        {{ $mensaje['password'] }}<br></strong><br></p>
-                                                                <p style="font-size: 16px;text-align: justify">Ten en
-                                                                    cuenta que siempre podrás seguir iniciando sesión
-                                                                    desde Google o&nbsp; &nbsp; &nbsp; &nbsp;
+                                                        <tr style="border-collapse:collapse">
+                                                            <td class="es-m-txt-c"
+                                                                style="padding:0;Margin:0;padding-top:15px"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313;text-align:justify">
+                                                                    <strong>Correo / usuario: {{ $mensaje['correo'] }}
+                                                                        <br>Contraseña: {{ $mensaje['password'] }}
+                                                                        <br></strong><br></p>
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313;text-align:justify">
+                                                                    Ten en cuenta que siempre podrás seguir iniciando
+                                                                    sesión desde Google o&nbsp; &nbsp; &nbsp; &nbsp;
                                                                     escribiendo tu usuario y contraseña en el login
                                                                     convencional.</p></td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
-                <table cellpadding="0" cellspacing="0" class="es-content" align="center">
-                    <tr>
-                        <td align="center" bgcolor="#0a2b6e"
-                            style="background-color: #0a2b6e;background-image: url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/33971592408649468.png);background-repeat: no-repeat;background-position: center center">
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tbody>
+                    <tr style="border-collapse:collapse">
+                        <td align="center" bgcolor="#ffffff"
+                            style="padding:0;Margin:0;background-color:#FFFFFF;background-image:url(https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/33971592408649468.png);background-repeat:no-repeat;background-position:center center"
+                            background="https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/33971592408649468.png">
                             <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
-                                   cellspacing="0" width="600">
-                                <tr>
-                                    <td class="es-p40t es-p40b es-m-p40t es-m-p40b es-m-p20r es-m-p20l" align="left">
-                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                            <tr>
-                                                <td width="600" align="center" valign="top">
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tbody>
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p20r es-m-p20l" align="left" bgcolor="#202732"
+                                        style="Margin:0;padding-left:35px;padding-right:35px;padding-top:40px;padding-bottom:40px;background-color:#202732">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tbody>
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:530px">
                                                     <table cellpadding="0" cellspacing="0" width="100%"
                                                            bgcolor="#f0f3fe"
-                                                           style="background-color: #f0f3fe;border-radius: 20px;border-collapse: separate"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:#F0F3FE;border-radius:20px"
                                                            role="presentation">
-                                                        <tr>
-                                                            <td align="left" class="es-p25t es-p10b es-p20r es-p20l"><h1
-                                                                    style="text-align: center;line-height: 150%">¡Buen
-                                                                    provecho!</h1></td>
+                                                        <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="Margin:0;padding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:25px">
+                                                                <h1 style="Margin:0;line-height:45px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#212121;text-align:center">
+                                                                    ¡Buen provecho!</h1></td>
                                                         </tr>
-                                                        <tr>
-                                                            <td align="center"
-                                                                class="es-p10t es-p25b es-p20r es-p20l es-m-p15t es-m-p20b es-m-p20r es-m-p20l">
-                                                                <span class="es-button-border"><a
-                                                                        href="https://my.stripo.email/cabinet/"
-                                                                        class="es-button" target="_blank"
-                                                                        style="border-width: 10px 20px">Ir a QRestauran App <amp-img
-                                                                            src="https://ivmfcv.stripocdn.email/content/guids/CABINET_1ce849b9d6fc2f13978e163ad3c663df/images/32371592816290258.png"
-                                                                            alt="icon" width="16"
-                                                                            style="margin-left:10px"
-                                                                            height="11"></amp-img></a></span></td>
-                                                        </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
             </td>
         </tr>
+        </tbody>
     </table>
 </div>
+
 </body>
 </html>
