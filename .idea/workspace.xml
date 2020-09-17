@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/password-send.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/password-send.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +224,8 @@
       <workItem from="1600212204316" duration="6448000" />
       <workItem from="1600221631404" duration="2921000" />
       <workItem from="1600271319121" duration="10371000" />
-      <workItem from="1600355837337" duration="947000" />
+      <workItem from="1600355837337" duration="1423000" />
+      <workItem from="1600357774509" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
