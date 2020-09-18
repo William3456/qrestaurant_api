@@ -14,7 +14,11 @@ class MenuRestauranteController extends Controller
      */
     public function index()
     {
-        $menus = MenuRestaurante::all();
+        $menus = MenuRestaurante::selectRaw('menu_restaurantes.*, tipo_menu.descripcion as tipo_menu_descripcion,
+               restaurantes.nombre as restaurantes_nombre')
+            ->join('tipo_menu', 'tipo_menu.id_tipo_menu', '=', 'menu_restaurantes.id_tipo_menu')
+            ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'menu_restaurantes.id_restaurante')
+            ->get();
         if ($menus == null) {
             return response()->json([
                 "error" => "No se encontraron registros",
@@ -150,12 +154,12 @@ class MenuRestauranteController extends Controller
 
         $actualizado = MenuRestaurante::where('id_menu', $idMenu)
             ->update($request->all());
-        if($actualizado == 1){
+        if ($actualizado == 1) {
             return response()->json([
                 'msj' => 'Menú actualizado',
                 'codigo' => 200,
             ]);
-        }else{
+        } else {
             return response()->json([
                 'msj' => 'Eror al actualizar',
                 'codigo' => 400,
@@ -163,28 +167,29 @@ class MenuRestauranteController extends Controller
         }
     }
 
-    public function delete($idMenu){
-        if(!empty($idMenu)){
-            if(MenuRestaurante::where('id_menu', $idMenu)->exists()){
+    public function delete($idMenu)
+    {
+        if (!empty($idMenu)) {
+            if (MenuRestaurante::where('id_menu', $idMenu)->exists()) {
                 $respuesta = MenuRestaurante::where('id_menu', $idMenu)->delete();
-                if($respuesta == 1){
+                if ($respuesta == 1) {
                     return response()->json([
                         'msj' => 'Menú eliminado',
                         'codigo' => 200,
                     ]);
-                }else{
+                } else {
                     return response()->json([
                         'msj' => 'Error al eliminar',
                         'codigo' => 500,
                     ]);
                 }
-            }else{
+            } else {
                 return response()->json([
                     'msj' => 'No existe el Menú',
                     'codigo' => 404,
                 ]);
             }
-        }else{
+        } else {
             return response()->json([
                 'msj' => 'El código de menú es obligatorio',
                 'codigo' => 403,
