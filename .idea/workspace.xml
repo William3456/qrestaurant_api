@@ -22,6 +22,7 @@
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,10 @@
       <workItem from="1600271319121" duration="10371000" />
       <workItem from="1600355837337" duration="1423000" />
       <workItem from="1600357774509" duration="2176000" />
-      <workItem from="1600389144404" duration="94000" />
+      <workItem from="1600389144404" duration="611000" />
+      <workItem from="1600547549476" duration="1372000" />
+      <workItem from="1600556027023" duration="1973000" />
+      <workItem from="1601067857795" duration="2236000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>

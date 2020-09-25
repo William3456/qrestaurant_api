@@ -30,10 +30,14 @@ Route::delete('usuario/eliminar/{email}', 'UsuarioController@delete'); //Elimina
 //Menús
 Route::get('menu', 'MenuRestauranteController@index'); //Devuelve todos los menús
 Route::get('menu/{idMenu}', 'MenuRestauranteController@show'); //Devuelve un menú por id
+
+Route::get('menu/restaurante/{idrestaurante}/tipo/{idTipo}', 'MenuRestauranteController@menuByTipoByRest'); //Devuelve menús por restaurante y tipo
+
 Route::get('menu/restaurante/{idRestaurante}',
     'MenuRestauranteController@menuByRestaurante'); //Devuelve los menús ligados al restaurante
 Route::get('menu/tipo/{idTipo}',
     'MenuRestauranteController@menuByTipo'); //Devuelve los menús por tipo
 Route::post('menu/crear', 'MenuRestauranteController@store'); //Crea un menú
+Route::post('menu/menuscanner', 'MenuRestauranteController@menuByScanner'); //Crea un menú
 Route::put('menu/actualizar', 'MenuRestauranteController@update'); //Actualiza un menú por su ID
 Route::delete('menu/eliminar/{idMenu}', 'MenuRestauranteController@delete'); //Elimina un menú por su ID

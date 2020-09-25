@@ -129,6 +129,35 @@ class MenuRestauranteController extends Controller
         }
     }
 
+    public function menuByTipoByRest($idRestaurante, $idTipo)
+    { //Trae menús por tipo
+        $menuByTipo = MenuRestaurante::where('id_tipo_menu', '=', $idTipo)
+            ->where('id_restaurante', $idRestaurante)->get();
+
+        if ($menuByTipo->count() == 0) {
+            return response()->json([
+                "error" => "No se encontraron registros",
+                "codigo" => "404",
+                "data" => null,
+            ]);
+        } else {
+            return response()->json([
+                "error" => "",
+                "codigo" => "200",
+                "data" => $menuByTipo
+            ]);
+        }
+    }
+
+    public function menuByScanner(Request $request){
+        $valida = $request->validate([
+            'id_usuario' => 'required',
+            'num_mesa' => 'required',
+            'id_restaurante' => 'required',
+            'id_tipo_menu' => 'required'
+        ]);
+        return $this->menuByTipoByRest($request->id_restaurante, $request->id_tipo_menu);
+    }
 
     /**
      * Update the specified resource in storage.
