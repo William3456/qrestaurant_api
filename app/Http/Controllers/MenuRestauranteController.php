@@ -151,7 +151,7 @@ class MenuRestauranteController extends Controller
 
     public function menuByScanner(Request $request){
         $valida = $request->validate([
-            'id_usuario' => 'required',
+            'correo_usuario' => 'required',
             'num_mesa' => 'required',
             'id_restaurante' => 'required',
             'id_tipo_menu' => 'required'
