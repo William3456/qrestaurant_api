@@ -205,6 +205,7 @@ class UsuarioController extends Controller
                         'nombre_usuario' => $usuarioFila->nombre,
                         'apellido_usuario' => $usuarioFila->apellido,
                         'id_tipo_usuario' => $usuarioFila->id_tipo_usuario,
+                        'restaurante_asociado' => $usuarioFila->restaurante_asociado,
                     ]);
                 } else {
                     return response()->json([
@@ -213,6 +214,7 @@ class UsuarioController extends Controller
                         'nombre_usuario' => null,
                         'apellido_usuario' => null,
                         'id_tipo_usuario' => null,
+                        'restaurante_asociado' => null,
                     ]);
                 }
             } else {
@@ -222,6 +224,7 @@ class UsuarioController extends Controller
                     'nombre_usuario' => null,
                     'apellido_usuario' => null,
                     'id_tipo_usuario' => null,
+                    'restaurante_asociado' => null,
                 ]);
             }
         } else {
@@ -231,6 +234,7 @@ class UsuarioController extends Controller
                 'nombre_usuario' => null,
                 'apellido_usuario' => null,
                 'id_tipo_usuario' => null,
+                'restaurante_asociado' => null,
             ]);
         }
     }

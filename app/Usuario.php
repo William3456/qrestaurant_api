@@ -11,3 +11,4 @@ class Usuario extends Model
     use Notifiable, HasApiTokens;
     protected $guarded = ['id_usuario'];
 }
+
