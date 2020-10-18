@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\MenuRestaurante;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class MenuRestauranteController extends Controller
 {
@@ -54,6 +56,7 @@ class MenuRestauranteController extends Controller
     {
         $validatedData = $request->validate([
             'titulo' => 'required',
+            'tipo_img' => 'required',
             'descripcion' => 'required',
             'precio' => 'required',
             'url_img' => 'required',
@@ -61,7 +64,28 @@ class MenuRestauranteController extends Controller
             'id_tipo_menu' => 'required|exists:tipo_menu,id_tipo_menu',
             'id_estado' => 'required|exists:estados,id_estado'
         ]);
-        $menu = MenuRestaurante::create($request->all());
+
+        $image = $request->url_img;  // your base64 encoded
+        $image = str_replace('data:image/png;base64,', '', $image);
+        $image = str_replace(' ', '+', $image);
+        $imageName = 'menu-' . $request->id_restaurante . '-' . time() . '.' . $request->tipo_img;
+        $path = storage_path() . '/app/public/menus_img/' . $imageName;
+        $ruta = \File::put($path, base64_decode($image));
+        $url = $request->getHttpHost().'/storage/menus_img/' . $imageName;
+
+        // $request->url_img = "prueba";
+        $menu = MenuRestaurante::create([
+            'titulo' => $request->titulo,
+            'descripcion' => $request->descripcion,
+            'precio' => $request->precio,
+            'descuento' => $request->descuento,
+            'id_estado' => $request->id_estado,
+            'url_img' => $url,
+            'id_restaurante' => $request->id_restaurante,
+            'id_tipo_menu' => $request->id_tipo_menu,
+            'promocion' =>  $request->promocion,
+        ]);
+
         return response()->json([
             "error" => "",
             "codigo" => "200",
@@ -149,7 +173,8 @@ class MenuRestauranteController extends Controller
         }
     }
 
-    public function menuByScanner(Request $request){
+    public function menuByScanner(Request $request)
+    {
         $valida = $request->validate([
             'correo_usuario' => 'required',
             'num_mesa' => 'required',
@@ -224,6 +249,28 @@ class MenuRestauranteController extends Controller
                 'codigo' => 403,
             ]);
         }
+
+    }
+
+    public function getB64Image($base64_image)
+    {
+        // Obtener el String base-64 de los datos
+        $image_service_str = substr($base64_image, strpos($base64_image, ",") + 1);
+        // Decodificar ese string y devolver los datos de la imagen
+        $image = base64_decode($image_service_str);
+        // Retornamos el string decodificado
+        return $image;
+    }
+
+    public function getB64Extension($base64_image, $full = null)
+    {
+        // Obtener mediante una expresión regular la extensión imagen y guardarla
+        // en la variable "img_extension"
+        //preg_match("/^data:image\/(.*);base64/i", $base64_image, $img_extension);
+        // Dependiendo si se pide la extensión completa o no retornar el arreglo con
+        // los datos de la extensión en la posición 0 - 1
+        //return ($full) ? $img_extension[0] : $img_extension[1];
+        return explode('/', mime_content_type($base64_image))[1];
 
     }
 }

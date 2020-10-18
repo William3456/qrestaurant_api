@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ajax_data.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" afterDir="false" />
@@ -63,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/resources/views/emails/password-send.blade.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/conexion.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/config/filesystems.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_util.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
@@ -219,6 +220,9 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\qrestaurant_api\storage\app\public\menus_img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\inventariokpc\funciones" />
     </key>
@@ -279,7 +283,9 @@
       <workItem from="1602724088203" duration="2533000" />
       <workItem from="1602893891597" duration="5498000" />
       <workItem from="1602908682941" duration="3405000" />
-      <workItem from="1602966853563" duration="6542000" />
+      <workItem from="1602966853563" duration="13424000" />
+      <workItem from="1603055429147" duration="2086000" />
+      <workItem from="1603058793322" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
@@ -373,10 +379,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600033368905" />
-    <state x="430" y="40" width="690" height="743" key="#phpunit.xml" timestamp="1601651309548">
+    <state x="430" y="40" width="690" height="743" key="#phpunit.xml" timestamp="1602988111838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="40" width="690" height="743" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1601651309548" />
+    <state x="430" y="40" width="690" height="743" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1602988111838" />
     <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1602566442347">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
