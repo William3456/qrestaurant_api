@@ -69,6 +69,12 @@ class MenuRestauranteController extends Controller
         $image = str_replace('data:image/png;base64,', '', $image);
         $image = str_replace(' ', '+', $image);
         $imageName = 'menu-' . $request->id_restaurante . '-' . time() . '.' . $request->tipo_img;
+
+        $storage = \Storage::disk('menus_img');
+        $carpeta = "menus_img";
+        if (!$storage->exists($carpeta)) {
+            $storage->makeDirectory($carpeta);
+        }
         $path = storage_path() . '/app/public/menus_img/' . $imageName;
         $ruta = \File::put($path, base64_decode($image));
         $url = $request->getHttpHost().'/storage/menus_img/' . $imageName;
