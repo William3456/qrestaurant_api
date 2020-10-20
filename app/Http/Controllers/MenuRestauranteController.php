@@ -167,9 +167,15 @@ class MenuRestauranteController extends Controller
 
     public function menuByTipoByRest($idRestaurante, $idTipo)
     { //Trae menús por tipo
-        $menuByTipo = MenuRestaurante::where('id_tipo_menu', '=', $idTipo)
-            ->where('id_restaurante', $idRestaurante)->get();
-
+        //$menuByTipo = MenuRestaurante::where('id_tipo_menu', '=', $idTipo)
+          //  ->where('id_restaurante', $idRestaurante)->get();
+        MenuRestaurante::selectRaw('menu_restaurantes.*, tipo_menu.descripcion as tipo_menu_descripcion,
+               restaurantes.nombre as restaurantes_nombre')
+            ->join('tipo_menu', 'tipo_menu.id_tipo_menu', '=', 'menu_restaurantes.id_tipo_menu')
+            ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'menu_restaurantes.id_restaurante')
+            ->where('restaurantes.id_tipo_menu', $idTipo)
+            ->where('restaurantes.id_restaurante', $idRestaurante)
+            ->get();
         if ($menuByTipo->count() == 0) {
             return response()->json([
                 "error" => "No se encontraron registros",

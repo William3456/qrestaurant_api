@@ -22,11 +22,6 @@
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ajax_data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_pagas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_pagas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas_pagas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas_pagas.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +281,8 @@
       <workItem from="1603055429147" duration="2086000" />
       <workItem from="1603058793322" duration="6267000" />
       <workItem from="1603140303415" duration="1800000" />
-      <workItem from="1603152429921" duration="5639000" />
+      <workItem from="1603152429921" duration="5725000" />
+      <workItem from="1603166410935" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
