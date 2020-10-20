@@ -57,7 +57,7 @@ class UsuarioController extends Controller
         }
         $usuario =  Usuario::create([
             'id_tipo_usuario' => $request->id_tipo_usuario,
-            'restaurante_asociado' => $request->id_restaurante_asociado,
+            'restaurante_asociado' => $request->restaurante_asociado,
             'id_estado' => $request->id_estado,
             'nombre' => $request->nombre,
             'apellido' => $request->apellido,
