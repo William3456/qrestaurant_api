@@ -26,7 +26,7 @@ Route::get('usuario', 'UsuarioController@index'); // Obtiene todos los usuarios
 Route::get('usuario/{idUser}', 'UsuarioController@show'); //Obtiene un usuario por su id o correo
 Route::put('usuario/actualizar', 'UsuarioController@update'); //Actualiza un usuario
 Route::delete('usuario/eliminar/{email}', 'UsuarioController@delete'); //Elimina un usuario por su correo
-
+Route::get('usuario/restaurante/{idRestaurante}', 'UsuarioController@getUserByRestaurante');
 //Menús
 Route::get('menu', 'MenuRestauranteController@index'); //Devuelve todos los menús
 Route::get('menu/{idMenu}', 'MenuRestauranteController@show'); //Devuelve un menú por id

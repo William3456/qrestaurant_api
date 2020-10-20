@@ -86,7 +86,7 @@ class MenuRestauranteController extends Controller
             'precio' => $request->precio,
             'descuento' => $request->descuento,
             'id_estado' => $request->id_estado,
-            'url_img' => $url,
+            'url_img' => 'http://' . $url . '?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
             'id_restaurante' => $request->id_restaurante,
             'id_tipo_menu' => $request->id_tipo_menu,
             'promocion' =>  $request->promocion,

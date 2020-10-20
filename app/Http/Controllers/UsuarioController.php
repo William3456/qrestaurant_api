@@ -93,7 +93,20 @@ class UsuarioController extends Controller
             return $usuario;
         }
     }
+    public function getUserByRestaurante($idRestaurante)
+    {
 
+        $usuario = Usuario::where('restaurante_asociado', $idRestaurante)->get();
+
+        if ($usuario == null) {
+            return response()->json([
+                "error" => "usuario no encontrado",
+                "codigo" => "404"
+            ]);
+        } else {
+            return $usuario;
+        }
+    }
     /**
      * Show the form for editing the specified resource.
      *

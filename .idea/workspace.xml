@@ -22,7 +22,8 @@
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ajax_data.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" afterDir="false" />
@@ -285,7 +286,9 @@
       <workItem from="1602908682941" duration="3405000" />
       <workItem from="1602966853563" duration="13424000" />
       <workItem from="1603055429147" duration="2086000" />
-      <workItem from="1603058793322" duration="5263000" />
+      <workItem from="1603058793322" duration="6267000" />
+      <workItem from="1603140303415" duration="1800000" />
+      <workItem from="1603152429921" duration="4157000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
