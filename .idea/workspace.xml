@@ -16,12 +16,27 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:wlazo" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/listaOfertas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/listaOfertas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_pagas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_pagas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/ofertas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/ofertas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/transferencias.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/transferencias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas_pagas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas_pagas.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +48,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -189,6 +204,8 @@
       <path value="$PROJECT_DIR$/vendor/league/event" />
       <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
       <path value="$PROJECT_DIR$/vendor/s-ichikawa/laravel-sendgrid-driver" />
+      <path value="$PROJECT_DIR$/vendor/cloudinary/cloudinary_php" />
+      <path value="$PROJECT_DIR$/vendor/jrm2k6/cloudder" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gb3PjCd9MEj7yCJcV93QT42Q13" />
@@ -284,6 +301,7 @@
       <workItem from="1603152429921" duration="5725000" />
       <workItem from="1603166410935" duration="3921000" />
       <workItem from="1603206788235" duration="2770000" />
+      <workItem from="1603324676051" duration="7252000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
