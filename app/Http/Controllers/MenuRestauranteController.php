@@ -21,6 +21,7 @@ class MenuRestauranteController extends Controller
             ->join('tipo_menu', 'tipo_menu.id_tipo_menu', '=', 'menu_restaurantes.id_tipo_menu')
             ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'menu_restaurantes.id_restaurante')
             ->get();
+
         if ($menus == null) {
             return response()->json([
                 "error" => "No se encontraron registros",
@@ -34,16 +35,6 @@ class MenuRestauranteController extends Controller
                 "data" => $menus
             ]);
         }
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**

@@ -17,6 +17,7 @@ class CreatePedidosTable extends Migration
             $table->id('id_pedido');
             $table->string("descripcion",255);
             $table->decimal('total', 9, 2);
+            $table->bigInteger("mesa");
             $table->foreignId("id_restaurante")->constrained('restaurantes', 'id_restaurante');
             $table->foreignId("id_usuario")->constrained('usuarios', 'id_usuario');
             $table->foreignId("id_estado")->constrained('estados', 'id_estado');
