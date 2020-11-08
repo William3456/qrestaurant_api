@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\MenuRestaurante;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
+use GuzzleHttp\Client;
 
 class MenuRestauranteController extends Controller
 {
@@ -59,35 +59,37 @@ class MenuRestauranteController extends Controller
         $image = $request->url_img;  // your base64 encoded
         $image = str_replace('data:image/png;base64,', '', $image);
         $image = str_replace(' ', '+', $image);
-        $imageName = 'menu-' . $request->id_restaurante . '-' . time() . '.' . $request->tipo_img;
+        $imageName = 'menu-' . $request->id_restaurante . '-' . time();
 
-        $storage = \Storage::disk('menus_img');
-        $carpeta = "menus_img";
-        if (!$storage->exists($carpeta)) {
-            $storage->makeDirectory($carpeta);
+
+        $response = $this->almacenarImg($request->url_img, $request->tipo_img, $imageName);
+
+        if ($response->verify != false) {
+            $menu = MenuRestaurante::create([
+                'titulo' => $request->titulo,
+                'descripcion' => $request->descripcion,
+                'precio' => $request->precio,
+                'descuento' => $request->descuento,
+                'id_estado' => $request->id_estado,
+                'url_img' => $response->url . '?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                'id_restaurante' => $request->id_restaurante,
+                'id_tipo_menu' => $request->id_tipo_menu,
+                'promocion' => $request->promocion,
+            ]);
+            return response()->json([
+                "error" => "",
+                "codigo" => "200",
+                "data" => $menu
+            ]);
+        } else {
+            return response()->json([
+                "error" => "Error al subir imagen",
+                "codigo" => "500",
+                "data" => null
+            ]);
         }
-        $path = storage_path() . '/app/public/menus_img/' . $imageName;
-        $ruta = \File::put($path, base64_decode($image));
-        $url = $request->getHttpHost().'/storage/menus_img/' . $imageName;
 
-        // $request->url_img = "prueba";
-        $menu = MenuRestaurante::create([
-            'titulo' => $request->titulo,
-            'descripcion' => $request->descripcion,
-            'precio' => $request->precio,
-            'descuento' => $request->descuento,
-            'id_estado' => $request->id_estado,
-            'url_img' => 'http://' . $url . '?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            'id_restaurante' => $request->id_restaurante,
-            'id_tipo_menu' => $request->id_tipo_menu,
-            'promocion' =>  $request->promocion,
-        ]);
 
-        return response()->json([
-            "error" => "",
-            "codigo" => "200",
-            "data" => $menu
-        ]);
     }
 
     /**
@@ -159,7 +161,7 @@ class MenuRestauranteController extends Controller
     public function menuByTipoByRest($idRestaurante, $idTipo)
     { //Trae menús por tipo
         //$menuByTipo = MenuRestaurante::where('id_tipo_menu', '=', $idTipo)
-          //  ->where('id_restaurante', $idRestaurante)->get();
+        //  ->where('id_restaurante', $idRestaurante)->get();
         $menuByTipo = MenuRestaurante::selectRaw('menu_restaurantes.*, tipo_menu.descripcion as tipo_menu_descripcion,
                restaurantes.nombre as restaurantes_nombre')
             ->join('tipo_menu', 'tipo_menu.id_tipo_menu', '=', 'menu_restaurantes.id_tipo_menu')
@@ -261,25 +263,24 @@ class MenuRestauranteController extends Controller
 
     }
 
-    public function getB64Image($base64_image)
+    public function almacenarImg($b64Img, $extension, $nombre)
     {
-        // Obtener el String base-64 de los datos
-        $image_service_str = substr($base64_image, strpos($base64_image, ",") + 1);
-        // Decodificar ese string y devolver los datos de la imagen
-        $image = base64_decode($image_service_str);
-        // Retornamos el string decodificado
-        return $image;
-    }
+        $urlBase = "https://apimg.000webhostapp.com/ws/";
+        // Nuevo cliente con un url base
+        $client = new \GuzzleHttp\Client(['base_uri' => $urlBase]);
 
-    public function getB64Extension($base64_image, $full = null)
-    {
-        // Obtener mediante una expresión regular la extensión imagen y guardarla
-        // en la variable "img_extension"
-        //preg_match("/^data:image\/(.*);base64/i", $base64_image, $img_extension);
-        // Dependiendo si se pide la extensión completa o no retornar el arreglo con
-        // los datos de la extensión en la posición 0 - 1
-        //return ($full) ? $img_extension[0] : $img_extension[1];
-        return explode('/', mime_content_type($base64_image))[1];
+        $response = $client->post("http://apimg.000webhostapp.com/ws/subida.php", [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
+            'json' => [
+                'tipo' => 1,
+                'extension' => $extension,
+                'nombre_img' => $nombre,
+                'img_b64' => $b64Img,
+            ]
+        ]);
 
+        return json_decode($response->getBody());
     }
 }
