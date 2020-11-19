@@ -88,8 +88,6 @@ class MenuRestauranteController extends Controller
                 "data" => null
             ]);
         }
-
-
     }
 
     /**

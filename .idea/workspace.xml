@@ -26,12 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrestaurant_api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/detalle_oferta_paga.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/detalle_oferta_paga.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +84,7 @@
     <setting file="file://$PROJECT_DIR$/config/filesystems.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_util.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/reporte_edit.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
@@ -329,6 +327,13 @@
       <workItem from="1604104655240" duration="3477000" />
       <workItem from="1604176503305" duration="108000" />
       <workItem from="1604179322306" duration="6867000" />
+      <workItem from="1604944353899" duration="3829000" />
+      <workItem from="1605222402639" duration="598000" />
+      <workItem from="1605290263679" duration="1553000" />
+      <workItem from="1605385422175" duration="4142000" />
+      <workItem from="1605655458552" duration="1332000" />
+      <workItem from="1605734238014" duration="1781000" />
+      <workItem from="1605825684234" duration="2628000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
