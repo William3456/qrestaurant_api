@@ -51,3 +51,6 @@ Route::get('restaurante/encargado/{idOrMail}',
 Route::put('restaurante/actualizar', 'RestauranteController@update'); //Actualiza un restaurante por su ID
 Route::delete('restaurante/eliminar/{idRestaurante}',
     'RestauranteController@delete'); //Elimina un restaurante por su ID
+
+//PEDIDOS
+Route::post('pedido/ingreso', 'PedidosController@store'); //Guardo pedidos de cliente
