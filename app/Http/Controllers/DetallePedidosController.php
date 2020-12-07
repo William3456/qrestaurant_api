@@ -30,7 +30,7 @@ class DetallePedidosController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,18 +41,35 @@ class DetallePedidosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\DetallePedidos  $detallePedidos
+     * @param \App\DetallePedidos $detallePedidos
      * @return \Illuminate\Http\Response
      */
-    public function show(DetallePedidos $detallePedidos)
+    public function show($idPedido)
     {
-        //
+        $detallePedido = DetallePedidos::selectRaw('detalle_pedidos.*, menu_restaurantes.titulo AS nombreMenu,
+            menu_restaurantes.descripcion AS descripcionMenu')
+            ->join('menu_restaurantes', 'menu_restaurantes.id_menu', '=', 'detalle_pedidos.id_menu_restaurante')
+            ->where('detalle_pedidos.id_pedido', '=', $idPedido)
+            ->get();
+        if ($detallePedido->count() == 0) {
+            return response()->json([
+                "error" => "No se encontraron registros",
+                "codigo" => "404",
+                "data" => null,
+            ]);
+        } else {
+            return response()->json([
+                "error" => "",
+                "codigo" => "200",
+                "data" => $detallePedido
+            ]);
+        }
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\DetallePedidos  $detallePedidos
+     * @param \App\DetallePedidos $detallePedidos
      * @return \Illuminate\Http\Response
      */
     public function edit(DetallePedidos $detallePedidos)
@@ -63,8 +80,8 @@ class DetallePedidosController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\DetallePedidos  $detallePedidos
+     * @param \Illuminate\Http\Request $request
+     * @param \App\DetallePedidos $detallePedidos
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, DetallePedidos $detallePedidos)
@@ -75,7 +92,7 @@ class DetallePedidosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\DetallePedidos  $detallePedidos
+     * @param \App\DetallePedidos $detallePedidos
      * @return \Illuminate\Http\Response
      */
     public function destroy(DetallePedidos $detallePedidos)

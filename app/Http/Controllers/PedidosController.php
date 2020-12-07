@@ -15,7 +15,33 @@ class PedidosController extends Controller
      */
     public function index()
     {
-        //
+
+    }
+
+    public function getPedidosByFecha($fecha, $estado)
+    {
+        $pedidos = Pedidos::selectRaw('pedidos.*, usuarios.nombre AS nombreCliente,
+            usuarios.apellido AS apellidoCliente, restaurantes.nombre AS nombreRestaurante')
+            ->join('usuarios', 'usuarios.id_usuario', '=', 'pedidos.id_usuario')
+            ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'pedidos.id_restaurante')
+            ->where('pedidos.created_at', 'LIKE', $fecha . '%')
+            ->where('pedidos.id_estado', '=', $estado)
+            ->orderBy('created_at', 'DESC')
+            ->get();
+
+        if ($pedidos->count() == 0) {
+            return response()->json([
+                "error" => "No se encontraron registros",
+                "codigo" => "404",
+                "data" => null,
+            ]);
+        } else {
+            return response()->json([
+                "error" => "",
+                "codigo" => "200",
+                "data" => $pedidos
+            ]);
+        }
     }
 
     /**
@@ -31,7 +57,7 @@ class PedidosController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -55,8 +81,8 @@ class PedidosController extends Controller
             'codigo_pedido' => $request->codigo_pedido,
         ]);
 
-        if($pedido->id != null){
-            foreach($request->detalle_pedido as $detalle){
+        if ($pedido->id != null) {
+            foreach ($request->detalle_pedido as $detalle) {
                 $detallePedido = DetallePedidos::create([
                     'id_pedido' => $pedido->id,
                     'cantidad' => $detalle['cantidad'],
@@ -66,7 +92,7 @@ class PedidosController extends Controller
             }
         }
         return response()->json([
-            "msj" => "Pedido insertado correctamente",
+            "error" => "",
             "codigo" => "200",
             "data" => null
         ]);
@@ -75,7 +101,7 @@ class PedidosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Pedidos  $pedidos
+     * @param \App\Pedidos $pedidos
      * @return \Illuminate\Http\Response
      */
     public function show(Pedidos $pedidos)
@@ -86,7 +112,7 @@ class PedidosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Pedidos  $pedidos
+     * @param \App\Pedidos $pedidos
      * @return \Illuminate\Http\Response
      */
     public function edit(Pedidos $pedidos)
@@ -97,8 +123,8 @@ class PedidosController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Pedidos  $pedidos
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Pedidos $pedidos
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Pedidos $pedidos)
@@ -109,7 +135,7 @@ class PedidosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Pedidos  $pedidos
+     * @param \App\Pedidos $pedidos
      * @return \Illuminate\Http\Response
      */
     public function destroy(Pedidos $pedidos)
