@@ -53,7 +53,7 @@ class RestauranteController extends Controller
 
         $actualizaRest = Usuario::where('id_usuario', $idUsuario)
             ->update([
-                'restaurante_asociado' => $request->restaurante_asociado,
+                'restaurante_asociado' => $request->id_restaurante,
             ]);
 
         $restaurante = Restaurante::create($request->all());
