@@ -127,9 +127,25 @@ class PedidosController extends Controller
      * @param \App\Pedidos $pedidos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pedidos $pedidos)
+    public function update(Request $request)
     {
-        //
+        $id = $request->id_pedido;
+        $actualiza = Pedidos::where('id_pedido', $id)
+            ->update([
+                'id_estado' => $request->id_estado,
+            ]);
+
+        if($actualiza == 1){
+            return response()->json([
+                'msj' => 'Estado actualizado',
+                'codigo' => 200,
+            ]);
+        }else{
+            return response()->json([
+                'msj' => 'Error al actualizar',
+                'codigo' => 400,
+            ]);
+        }
     }
 
     /**

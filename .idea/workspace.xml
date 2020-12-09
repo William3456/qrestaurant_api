@@ -27,10 +27,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetallePedidosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetallePedidosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/menu/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/menu/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,7 @@
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/usuariosDescuento.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/conexion.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticas.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/estadisticas.js" root0="SKIP_INSPECTION" />
@@ -262,13 +262,13 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\inventariokpc\images" />
-      <recent name="C:\wamp64\www\qrestaurant_api\storage\app\public\menus_img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\inventariokpc\images" />
       <recent name="C:\xampp\htdocs\inventariokpc\funciones" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\inventariokpc\images" />
+      <recent name="C:\wamp64\www\qrestaurant_api\storage\app\public\menus_img" />
     </key>
   </component>
   <component name="RunManager">
@@ -370,7 +370,9 @@
       <workItem from="1607126795728" duration="11165000" />
       <workItem from="1607200804585" duration="5288000" />
       <workItem from="1607359432979" duration="3633000" />
-      <workItem from="1607372141597" duration="6146000" />
+      <workItem from="1607372141597" duration="16293000" />
+      <workItem from="1607460059313" duration="6994000" />
+      <workItem from="1607525388456" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
@@ -414,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602566443143</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ejecución de ofertas desde la creación de las mismas">
+      <created>1607394669176</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607394669176</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Funcional filtrado de años transferencias y contraentrega - estadísticas">
+      <created>1607478572301</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607478572301</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +465,8 @@
     <MESSAGE value="Modificaciones pequeñas" />
     <MESSAGE value="Activar e inactivar productos al ejecutar y revertir oferta" />
     <MESSAGE value="Ejecución de ofertas desde la creación de las mismas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejecución de ofertas desde la creación de las mismas" />
+    <MESSAGE value="Funcional filtrado de años transferencias y contraentrega - estadísticas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcional filtrado de años transferencias y contraentrega - estadísticas" />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="248" key="#Notifications" timestamp="1602896943740">
@@ -464,10 +481,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599856146613" />
-    <state x="531" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598749442597">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="531" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1598749442597" />
     <state x="572" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1607378406342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -480,10 +493,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="430" y="40" width="690" height="743" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1602988111838" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1602566442347">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1607478568506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602566442347" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607478568506" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1606515566185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -508,10 +521,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602565133321" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1603941533350">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607478576666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603941533350" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607478576666" />
     <state x="509" y="64" key="VcsDiffUtil.ChangesDialog" timestamp="1603754971201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
