@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Restaurante;
+use App\Usuario;
 use Illuminate\Http\Request;
 
 class RestauranteController extends Controller
@@ -47,6 +48,13 @@ class RestauranteController extends Controller
             'id_usuario' => 'required|exists:usuarios,id_usuario',
             'id_estado' => 'required|exists:estados,id_estado'
         ]);
+
+        $idUsuario = $request->id_usuario;
+
+        $actualizaRest = Usuario::where('id_usuario', $idUsuario)
+            ->update([
+                'restaurante_asociado' => $request->restaurante_asociado,
+            ]);
 
         $restaurante = Restaurante::create($request->all());
 
