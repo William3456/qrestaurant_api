@@ -54,7 +54,7 @@ Route::delete('restaurante/eliminar/{idRestaurante}',
 
 //PEDIDOS
 Route::post('pedido/ingreso', 'PedidosController@store'); //Guardo pedidos de cliente
-Route::get('pedido/obtenerbyfechaestado/{fecha}/{estado}', 'PedidosController@getPedidosByFecha'); //Obtener pedidos por fecha
+Route::get('pedido/obtenerbyfechaestado/{fecha}/{estado}/{idRestaurante}', 'PedidosController@getPedidosByFecha'); //Obtener pedidos por fecha y restaurante
 Route::put('pedido/actualizarestado', 'PedidosController@update'); //Actualiza estado de pedido
 
 //DETALLE DE PEDIDOS

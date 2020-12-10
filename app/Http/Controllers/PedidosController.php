@@ -18,7 +18,7 @@ class PedidosController extends Controller
 
     }
 
-    public function getPedidosByFecha($fecha, $estado)
+    public function getPedidosByFecha($fecha, $estado, $idRestaurante)
     {
         $pedidos = Pedidos::selectRaw('pedidos.*, usuarios.nombre AS nombreCliente,
             usuarios.apellido AS apellidoCliente, restaurantes.nombre AS nombreRestaurante')
@@ -26,7 +26,8 @@ class PedidosController extends Controller
             ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'pedidos.id_restaurante')
             ->where('pedidos.created_at', 'LIKE', $fecha . '%')
             ->where('pedidos.id_estado', '=', $estado)
-            ->orderBy('created_at', 'DESC')
+            ->where('pedidos.id_restaurante', $idRestaurante)
+            ->orderBy('created_at', 'ASC')
             ->get();
 
         if ($pedidos->count() == 0) {

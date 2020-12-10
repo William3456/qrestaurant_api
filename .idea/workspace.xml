@@ -27,8 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetallePedidosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetallePedidosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RestauranteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RestauranteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,7 +372,7 @@
       <workItem from="1607372141597" duration="16293000" />
       <workItem from="1607460059313" duration="6994000" />
       <workItem from="1607525388456" duration="16085000" />
-      <workItem from="1607620182364" duration="93000" />
+      <workItem from="1607620182364" duration="2786000" />
     </task>
     <task id="LOCAL-00001" summary="Creando BD">
       <created>1598374909026</created>
@@ -465,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607564280260</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cambios query detalle de pedidos">
+      <created>1607620323956</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607620323956</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +511,8 @@
     <MESSAGE value="Actualización de estado de pedidos" />
     <MESSAGE value="Cambios Restaurante" />
     <MESSAGE value="Cambios para calculos de transacciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios para calculos de transacciones" />
+    <MESSAGE value="Cambios query detalle de pedidos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios query detalle de pedidos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="248" key="#Notifications" timestamp="1602896943740">
@@ -531,10 +539,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="430" y="40" width="690" height="743" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1602988111838" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1607564279221">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1607620322459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607564279221" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607620322459" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1606515566185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -559,10 +567,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602565133321" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607564286453">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607620332593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607564286453" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607620332593" />
     <state x="509" y="64" key="VcsDiffUtil.ChangesDialog" timestamp="1603754971201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
