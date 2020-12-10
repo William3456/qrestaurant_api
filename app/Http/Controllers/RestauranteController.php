@@ -51,13 +51,13 @@ class RestauranteController extends Controller
 
         $idUsuario = $request->id_usuario;
 
-
-
         $restaurante = Restaurante::create($request->all());
+
         $actualizaRest = Usuario::where('id_usuario', $idUsuario)
             ->update([
                 'restaurante_asociado' => $restaurante->id,
             ]);
+
         return response()->json([
             "error" => "",
             "codigo" => "200",

@@ -47,7 +47,7 @@ class DetallePedidosController extends Controller
     public function show($idPedido)
     {
         $detallePedido = DetallePedidos::selectRaw('detalle_pedidos.*, menu_restaurantes.titulo AS nombreMenu,
-            menu_restaurantes.descripcion AS descripcionMenu')
+            menu_restaurantes.descripcion AS descripcionMenu, menu_restaurantes.url_img')
             ->join('menu_restaurantes', 'menu_restaurantes.id_menu', '=', 'detalle_pedidos.id_menu_restaurante')
             ->where('detalle_pedidos.id_pedido', '=', $idPedido)
             ->get();
