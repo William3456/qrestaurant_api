@@ -1,114 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:wlazo" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="">
+    <list default="true" id="5153f6d1-e039-4877-b42e-d08e481e8ff8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/estadisticas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/estadisticas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/estadisticas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/estadisticas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc" value="1503431263fe9891a450c8329f0c0fa1fce6009a" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="hiddenUrls">
-      <set>
-        <option value="https://github.com/William3456/qrestaurant_api.git" />
-      </set>
-    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/detalle_orden_tarjeta.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/editar_oferta.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/usuariosDescuento.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/conexion.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticas.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/estadisticas.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/contraentrega/configs/utils.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/estadisticas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/crearDescuentoNivel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/transferencias/models/enviarModel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/transferencias/models/guardarModel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/DetallePedidosController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_util.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/reporte_edit.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/reporte.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/ofertas.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/ofertas_edit.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/MenuRestauranteController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/js/descuentos.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/RestauranteController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/seeds/UsuarioSeeder.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/seeds/TipoUsuarioSeeder.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/eliminarDescuentoNivel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/contraentrega/models/guardarModel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192137_create_menu_restaurantes_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192121_create_restaurantes_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/contraentrega/models/enviarModel.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192001_create_tipo_usuarios_table.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/listaOfertas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/database/migrations/2020_08_25_192002_create_usuarios_table.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/ofertas_pagas.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/detalles_ofertas_pagas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/reporte_ejecutado.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Usuario.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/lista_ofertas_pagas.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Restaurante.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/menu/menu.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/detalle_oferta_paga.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/asignar.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/routes/api.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/routes/web.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/resources/views/emails/password-send.blade.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/asigna_descuentos.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/config/filesystems.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/PedidosController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/estadisticasData.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/routes/api.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../xampp/htdocs/inventariokpc/funciones/transferencias.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -238,7 +158,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1gb3PjCd9MEj7yCJcV93QT42Q13" />
+  <component name="ProjectId" id="1lUfyws1W4qzXIGCv1lbux2ibn3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -246,11 +166,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;C:/wamp64/www/qrestaurant_api/storage/logs/laravel.log" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xampp/htdocs/contraentrega" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -258,350 +175,24 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\inventariokpc\images" />
-      <recent name="C:\xampp\htdocs\inventariokpc\funciones" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\inventariokpc\images" />
-      <recent name="C:\wamp64\www\qrestaurant_api\storage\app\public\menus_img" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a32bc7c7-9acf-4638-ba58-5e5a2aa7e47c" name="Default Changelist" comment="" />
-      <created>1598369442154</created>
+      <changelist id="5153f6d1-e039-4877-b42e-d08e481e8ff8" name="Default Changelist" comment="" />
+      <created>1607650746343</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598369442154</updated>
-      <workItem from="1598369444296" duration="108000" />
-      <workItem from="1598369587596" duration="13235000" />
-      <workItem from="1598477508189" duration="6839000" />
-      <workItem from="1598495395890" duration="5646000" />
-      <workItem from="1598539969326" duration="5048000" />
-      <workItem from="1598629975105" duration="10456000" />
-      <workItem from="1598735912486" duration="7995000" />
-      <workItem from="1598916102056" duration="2083000" />
-      <workItem from="1599340910237" duration="3872000" />
-      <workItem from="1599845211496" duration="2647000" />
-      <workItem from="1599956143357" duration="710000" />
-      <workItem from="1599971980777" duration="5174000" />
-      <workItem from="1600031408868" duration="6222000" />
-      <workItem from="1600212204316" duration="6448000" />
-      <workItem from="1600221631404" duration="2921000" />
-      <workItem from="1600271319121" duration="10371000" />
-      <workItem from="1600355837337" duration="1423000" />
-      <workItem from="1600357774509" duration="2176000" />
-      <workItem from="1600389144404" duration="611000" />
-      <workItem from="1600547549476" duration="1372000" />
-      <workItem from="1600556027023" duration="1973000" />
-      <workItem from="1601067857795" duration="2572000" />
-      <workItem from="1601086845006" duration="1094000" />
-      <workItem from="1601309073310" duration="1145000" />
-      <workItem from="1601339217584" duration="5355000" />
-      <workItem from="1601397369299" duration="4886000" />
-      <workItem from="1601650905823" duration="14945000" />
-      <workItem from="1601759226034" duration="8203000" />
-      <workItem from="1602119947123" duration="2434000" />
-      <workItem from="1602288621767" duration="4105000" />
-      <workItem from="1602360333506" duration="6383000" />
-      <workItem from="1602380295311" duration="2280000" />
-      <workItem from="1602466136439" duration="824000" />
-      <workItem from="1602531408718" duration="1895000" />
-      <workItem from="1602551405484" duration="4292000" />
-      <workItem from="1602556007253" duration="605000" />
-      <workItem from="1602565006362" duration="4641000" />
-      <workItem from="1602724088203" duration="2533000" />
-      <workItem from="1602893891597" duration="5498000" />
-      <workItem from="1602908682941" duration="3405000" />
-      <workItem from="1602966853563" duration="13424000" />
-      <workItem from="1603055429147" duration="2086000" />
-      <workItem from="1603058793322" duration="6267000" />
-      <workItem from="1603140303415" duration="1800000" />
-      <workItem from="1603152429921" duration="5725000" />
-      <workItem from="1603166410935" duration="3921000" />
-      <workItem from="1603206788235" duration="2770000" />
-      <workItem from="1603324676051" duration="10083000" />
-      <workItem from="1603570212192" duration="1218000" />
-      <workItem from="1603730265949" duration="1229000" />
-      <workItem from="1603753824365" duration="1279000" />
-      <workItem from="1603755218969" duration="12125000" />
-      <workItem from="1603827563250" duration="4296000" />
-      <workItem from="1603930976560" duration="10497000" />
-      <workItem from="1603987945220" duration="924000" />
-      <workItem from="1604104655240" duration="3477000" />
-      <workItem from="1604176503305" duration="108000" />
-      <workItem from="1604179322306" duration="6867000" />
-      <workItem from="1604944353899" duration="3829000" />
-      <workItem from="1605222402639" duration="598000" />
-      <workItem from="1605290263679" duration="1553000" />
-      <workItem from="1605385422175" duration="4142000" />
-      <workItem from="1605655458552" duration="1332000" />
-      <workItem from="1605734238014" duration="1781000" />
-      <workItem from="1605825684234" duration="5142000" />
-      <workItem from="1605915973885" duration="286000" />
-      <workItem from="1605972563829" duration="11741000" />
-      <workItem from="1605996203843" duration="8806000" />
-      <workItem from="1606147691110" duration="3740000" />
-      <workItem from="1606185987008" duration="11204000" />
-      <workItem from="1606231526307" duration="5281000" />
-      <workItem from="1606272686460" duration="7478000" />
-      <workItem from="1606327899184" duration="5987000" />
-      <workItem from="1606359416632" duration="6884000" />
-      <workItem from="1606513324827" duration="1358000" />
-      <workItem from="1606524474344" duration="1859000" />
-      <workItem from="1606594498383" duration="3390000" />
-      <workItem from="1606922484197" duration="90000" />
-      <workItem from="1606951674207" duration="5465000" />
-      <workItem from="1607097049365" duration="4440000" />
-      <workItem from="1607126795728" duration="11165000" />
-      <workItem from="1607200804585" duration="5288000" />
-      <workItem from="1607359432979" duration="3633000" />
-      <workItem from="1607372141597" duration="16293000" />
-      <workItem from="1607460059313" duration="6994000" />
-      <workItem from="1607525388456" duration="16085000" />
-      <workItem from="1607620182364" duration="2786000" />
+      <updated>1607650746343</updated>
+      <workItem from="1607650810209" duration="5883000" />
+      <workItem from="1607656855567" duration="212000" />
+      <workItem from="1607699874803" duration="3038000" />
     </task>
-    <task id="LOCAL-00001" summary="Creando BD">
-      <created>1598374909026</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1598374909026</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Creando BD">
-      <created>1598556129056</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1598556129056</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Modificaciones pequeñas">
-      <created>1602364498216</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1602364498216</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Activar e inactivar productos al ejecutar y revertir oferta">
-      <created>1602369256871</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1602369256871</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Activar e inactivar productos al ejecutar y revertir oferta">
-      <created>1602369356976</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1602369356976</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Ejecución de ofertas desde la creación de las mismas">
-      <created>1602566443143</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1602566443143</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Ejecución de ofertas desde la creación de las mismas">
-      <created>1607394669176</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1607394669176</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Funcional filtrado de años transferencias y contraentrega - estadísticas">
-      <created>1607478572301</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1607478572301</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Actualización de estado de pedidos">
-      <created>1607550786574</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1607550786574</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Cambios Restaurante">
-      <created>1607553682028</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1607553682028</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Cambios Restaurante">
-      <created>1607554232750</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1607554232750</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Cambios Restaurante">
-      <created>1607554446630</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1607554446630</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Cambios para calculos de transacciones">
-      <created>1607564280260</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1607564280260</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Cambios query detalle de pedidos">
-      <created>1607620323956</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1607620323956</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="wlazo" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creando BD" />
-    <MESSAGE value="Modificaciones pequeñas" />
-    <MESSAGE value="Activar e inactivar productos al ejecutar y revertir oferta" />
-    <MESSAGE value="Ejecución de ofertas desde la creación de las mismas" />
-    <MESSAGE value="Funcional filtrado de años transferencias y contraentrega - estadísticas" />
-    <MESSAGE value="Actualización de estado de pedidos" />
-    <MESSAGE value="Cambios Restaurante" />
-    <MESSAGE value="Cambios para calculos de transacciones" />
-    <MESSAGE value="Cambios query detalle de pedidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios query detalle de pedidos" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="655" y="248" key="#Notifications" timestamp="1602896943740">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="655" y="248" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1602896943740" />
-    <state x="487" y="0" key="#PHP" timestamp="1599855896817">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="487" y="0" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1599855896817" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599856146613">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599856146613" />
-    <state x="572" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1607378406342">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="572" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607378406342" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607379683707">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607379683707" />
-    <state x="430" y="40" width="690" height="743" key="#phpunit.xml" timestamp="1602988111838">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="430" y="40" width="690" height="743" key="#phpunit.xml/0.0.1536.824@0.0.1536.824" timestamp="1602988111838" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1607620322459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607620322459" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1606515566185">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1606515566185" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606955492497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606955492497" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1602899377364">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1602899377364" />
-    <state x="345" y="182" key="MultipleFileMergeDialog" timestamp="1604105179338">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="345" y="182" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604105179338" />
-    <state x="550" y="119" key="NewPhpClassDialog" timestamp="1599344454694">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="550" y="119" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1599344454694" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1602565133321">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602565133321" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1607620332593">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607620332593" />
-    <state x="509" y="64" key="VcsDiffUtil.ChangesDialog" timestamp="1603754971201">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="509" y="64" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603754971201" />
-    <state x="406" y="26" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605983252490">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="406" y="26" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1605983252490" />
-    <state x="577" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601413650729">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="577" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601413650729" />
-    <state x="506" y="121" width="824" height="596" key="find.popup" timestamp="1606953022826">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="506" y="121" width="824" height="596" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606953022826" />
-    <state x="564" y="191" key="git4idea.merge.GitMergeDialog" timestamp="1604105154173">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="564" y="191" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604105154173" />
-    <state x="545" y="182" key="refactoring.ChangeSignatureDialog" timestamp="1602898133258">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="545" y="182" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1602898133258" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1606233340834">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606233340834" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607360550649">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607360550649" />
   </component>
 </project>

@@ -45,6 +45,29 @@ class PedidosController extends Controller
         }
     }
 
+    public function obtenerByCliente($idCliente){
+        $pedidos = Pedidos::selectRaw('pedidos.*, usuarios.nombre AS nombreCliente,
+            usuarios.apellido AS apellidoCliente, restaurantes.nombre AS nombreRestaurante')
+            ->join('usuarios', 'usuarios.id_usuario', '=', 'pedidos.id_usuario')
+            ->join('restaurantes', 'restaurantes.id_restaurante', '=', 'pedidos.id_restaurante')
+            ->where('pedidos.id_usuario', $idCliente)
+            ->orderBy('created_at', 'DESC')
+            ->get();
+
+        if ($pedidos->count() == 0) {
+            return response()->json([
+                "error" => "No se encontraron registros",
+                "codigo" => "404",
+                "data" => null,
+            ]);
+        } else {
+            return response()->json([
+                "error" => "",
+                "codigo" => "200",
+                "data" => $pedidos
+            ]);
+        }
+    }
     /**
      * Show the form for creating a new resource.
      *
